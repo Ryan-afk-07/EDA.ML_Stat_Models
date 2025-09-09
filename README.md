@@ -1,3 +1,17 @@
+<h1>Machine Learning, Statistical Models</h1>
+<p>Primarily done using <img src="https://www.python.org/static/community_logos/python-logo.png" height=20> <br>Flask appplication is employed in some projects</p>
+
+<p>Refer below for the list of ML models</p>
+<table>
+  <thead>
+    <tr>
+      <td>Project Name</td>
+      <td>Main Model explored</td>
+      <td>Project Link</td>
+    </tr>
+  </thead>
+</table>
+
 <h1>Exploratory_Data_Models</h1>
 <p>Primarily done through <img src="https://www.python.org/static/community_logos/python-logo.png" height=20>, <img src="https://jupyter.org/assets/homepage/main-logo.svg" height=30 width=60> and <img src="https://www.r-project.org/logo/Rlogo.png" height=20> </p>
 
