@@ -10,6 +10,12 @@
       <td>Project Link</td>
     </tr>
   </thead>
+  <tbody>
+    <tr>
+      <td>Eye Color Detection</td>
+      <td><a href="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/tree/main/ML/Eye_Color_Detection">Click here</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <h1>Exploratory_Data_Models</h1>
