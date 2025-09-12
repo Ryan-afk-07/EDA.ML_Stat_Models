@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/eye_detect.css">
+</head>
+
+<body>
+  <h1>Is your eye blue?</h1>
+  <div id="eye_container" class="eye_container">
+    <form onsubmit="return false;">
+      <p>Input Image: <input class="image" id="image" type="file" accept="image/*"></p>
+      <input type="button" value="submit" onclick="test()">
+      <input type="button" value="Reset" onclick="Reset()">
+    </form>
+  </div>
+  <div class="result" id="result">
+  </div>
+  <p class="confi" id="confi"></p>
+</body>
+
+<script>
+  function test() {
+    var image = document.getElementById('image')
+    if (!image || image.files.length === 0) {
+      alert("Please insert an image");
+      return;
+    }
+
+    let file = image.files[0]
+    if (!file.type.startsWith("image/")) {
+      alert("Selected file is not an image");
+      return;
+    }
+    var reader = new FileReader();
+    reader.onload = () => {
+      var json = {
+        image: reader.result,
+        predict: true
+      };
+
+      sendData(json);
+    };
+
+    reader.readAsDataURL(file)
+  }
+
+  function sendData(json) {
+    fetch("/predict", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(json)
+    })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("confi").innerText =
+          "Prediction: " + data.prediction + "\nConfidence: " + data.confidence,
+          document.getElementById("result").innerHTML = data.html_snippet;
+      })
+      .catch(err => {
+        console.error("Error:", err);
+        alert("Error sending data to API");
+      });
+  }
+
+  function Reset() {
+    var image = document.getElementById('image');
+    image.value = ''
+    document.getElementById('result').innerText = '';
+  }
+
+</script>
+
+</html>
