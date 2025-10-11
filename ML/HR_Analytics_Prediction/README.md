@@ -92,3 +92,21 @@
   <p><strong>Cleaning</strong>: Data was presented rather cleanly. No NAs or NULL values to be removed</p>
   <p><strong>Transformation</strong>: Changed/Updated the department and salary categorical strings into numerical format for ease in the feature selection/modeling stages</p>
 </div>
+
+<div>
+  <h2>Exploratory Data Analysis</h2>
+  <h3>Summarized Findings:</h3>
+  <p>1. Satisfication Levels provide significant importance/influence to an individual's stay with the company</p>
+  <p>2. Averge monthly hours for individuals whom left also show a bigger spread than those who did not leave</p>
+  <p>3. For an individual, visualization shows that the likelihood of him/her leaving trends very critically to no once the 7 year mark is reach. It also shows an inclination of resignation towards the 5 year mark and thereafter an declination.</p>
+  <p>4. There is not much insight that could be derived from whether evaluation scores or if the individual has been promoted that will result in him/her leaving the company</p>
+  <strong>Snippet of Data Visualizations which explains the above findings</strong> <br>
+  <img src="" height=100>
+</div>
+
+<div>
+  <h2>Feature Selection</h2>
+  <strong>Techniques used: Feature importance Profilling, Heatmap Correlation</strong>
+  <strong>Eventual features used: Satisfaction Level, Average Monthly Hours, Salary, Last 5 years promotion</strong> <br>
+  <img src="" height=100>
+</div>
