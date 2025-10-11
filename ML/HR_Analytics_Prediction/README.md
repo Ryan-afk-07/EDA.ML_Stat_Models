@@ -106,7 +106,41 @@
 
 <div>
   <h2>Feature Selection</h2>
-  <strong>Techniques used: Feature importance Profilling, Heatmap Correlation</strong>
-  <strong>Eventual features used: Satisfaction Level, Average Monthly Hours, Salary, Last 5 years promotion</strong> <br>
+  <p><strong>Techniques used:</strong> Feature importance Profilling, Heatmap Correlation</p>
+  <p><strong>Eventual features used</strong>: Satisfaction Level, Average Monthly Hours, Salary, Last 5 years promotion, Time Spend in Company</p> <br>
   <img src="" height=100>
+</div>
+
+<div>
+  <h2>Classification Modelling to Predict Individual's departure</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Classification Model</th>
+        <th>Additional Tuning</th>
+        <th>Accuracy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Decision Tree Classifier</td>
+        <td>No</td>
+        <td>0.9726 (97.26%)</td>
+      </tr>
+      <tr>
+        <td>Decision Tree Classifier</td>
+        <td>Yes- Hyperparameter tuning (class weight, criterion, max_depth, min_samples_leaf, min_samples_split)</td>
+        <td>0.9675 (96.75%)</td>
+      </tr>
+      <tr>
+        <td>Random Forest Classifier</td>
+        <td>No</td>
+        <td>0.9793 (97.93%)</td>
+      </tr>
+      <tr>
+        <td>Random Forest Classifier</td>
+        <td>Yes - Hyperparameter tuning (</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
