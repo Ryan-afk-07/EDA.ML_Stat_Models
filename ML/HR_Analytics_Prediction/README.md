@@ -64,6 +64,24 @@
         <td>Categorical (Binary)</td>
         <td>Binary</td>
       </tr>
+      <tr>
+        <td>Promotion Last 5 Years</td>
+        <td>Individual has or has not received a promotion in the last 5 years (or years in which he or she is employed for if less than 5)</td>
+        <td>Categorical (Binary)</td>
+        <td>Binary</td>
+      </tr>
+      <tr>
+        <td>Department</td>
+        <td>Department individual is in within the company</td>
+        <td>Categorical</td>
+        <td>String</td>
+      </tr>
+      <tr>
+        <td>Salary</td>
+        <td>Salary tier in which the individual is paid prior to his/her departure</td>
+        <td>Categorical</td>
+        <td>String</td>
+      </tr>
     </tbody>
   </table>
 </div>
