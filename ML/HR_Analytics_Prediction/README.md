@@ -85,3 +85,10 @@
     </tbody>
   </table>
 </div>
+
+
+<div>
+  <h2>Cleaning, Transforming Steps and Processes</h2>
+  <p><strong>Cleaning</strong>: Data was presented rather cleanly. No NAs or NULL values to be removed</p>
+  <p><strong>Transformation</strong>: Changed/Updated the department and salary categorical strings into numerical format for ease in the feature selection/modeling stages</p>
+</div>
