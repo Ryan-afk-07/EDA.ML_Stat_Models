@@ -14,7 +14,56 @@
   <h2>Metadata, Dataset details</h2>
   <table>
     <thead>
-      <tr></tr>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Data Type</th>
+        <th>Data format</th>
+      </tr>
     </thead>
+    <tbody>
+      <tr>
+        <td>Satisfication Level</td>
+        <td>Results of an individual's satisfication with the company/role</td>
+        <td>Continuous</td>
+        <td>Float</td>
+      </tr>
+      <tr>
+        <td>Last Evaluation</td>
+        <td>Self interpretation: Last Evaluation rating of individual's performance</td>
+        <td>Continous</td>
+        <td>Float</td>
+      </tr>
+      <tr>
+        <td>Number Project</td>
+        <td>Self interpretation: Number of projects individual has assisted/contributed during his/her tenure with company</td>
+        <td>Continuous</td>
+        <td>Whole Number</td>
+      </tr>
+      <tr>
+        <td>Average Monthly Hours</td>
+        <td>Number of hours individual worked in a month (averaged out across entire period individual is with company)</td>
+        <td>Continuous (mean></td>
+        <td>Float</td>
+      </tr>
+      <tr>
+        <td>Time Spent with Company</td>
+        <td>Number of years individual spent with company (numbers likely truncated unless individual has spent significant time with company for the particular year - in which it will likely be rounded)</td>
+        <td>Continuous</td>
+        <td>Whole Number</td>
+      </tr>
+      <tr>
+        <td>Work Accident</td>
+        <td>If individual has sustained any work accidents during his/her tenure with the company</td>
+        <td>Categorical (Binary)</td>
+        <td>Binary/Boolean</td>
+      </tr>
+      <tr>
+        <td>Left</td>
+        <td>Individual has or has not left the company</td>
+        <td>Categorical (Binary)</td>
+        <td>Binary</td>
+      </tr>
+    </tbody>
   </table>
 </div>
