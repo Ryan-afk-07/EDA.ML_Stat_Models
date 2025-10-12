@@ -73,4 +73,11 @@
 </div>
 <div>
   <h2>Exploratory Data Visualization</h2>
+  <strong>1. Created chloropleth maps to show spread of Olympic medal counts </strong>
+  <img src="">
+  <p>Findings: <br>
+    1. Prior to 1990s, Asia did not have a huge representation in the Summer Olympic Games. Was mostly America and Europe <br>
+    2. Number of medals issued per each subsequent Summer olympic games increases. This would most likely be due to the inclusion of more varied sport disciplines
+    3. America is a consistent top few performer across all Summer Olympic games
+  </p>
 </div>
