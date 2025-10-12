@@ -81,4 +81,7 @@
     2. Number of medals issued per each subsequent Summer olympic games increases. This would most likely be due to the inclusion of more varied sport disciplines
     3. America is a consistent top few performer across all Summer Olympic games
   </p>
+  <strong>2. Created Correlation Heatmap in an effort to find out if a change in medal count may be related to a update in GDP or population</strong>
+  <img src="">
+  
 </div>
