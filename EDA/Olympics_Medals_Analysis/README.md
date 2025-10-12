@@ -65,3 +65,12 @@
     </tbody>
   </table>
 </div>
+<div>
+  <h2>Data Cleaning, Transformation</h2>
+  <strong>1. </strong><p>Cleaned up rows that contained NA values</p>
+  <strong>2. </strong><p>Updated Year column (YYYY-MM-DD)for both summer and winter datasets into just Datetime (Year) format, for ease of transformation and subsequent visualization</p>
+  <strong>3. </strong><p>Merged Ref Dictionary Dataset with the Summer Olympic and Winter Olympic count datasets</p>
+</div>
+<div>
+  <h2>Exploratory Data Visualization</h2>
+</div>
