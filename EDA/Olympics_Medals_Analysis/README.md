@@ -4,6 +4,8 @@
   <h2>General Information, Dataset Metadata</h2>
   <p><strong>Primarily used with:</strong> <img src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" height=20 width=20>
     <img src="https://jupyter.org/assets/homepage/main-logo.svg" height=20 width=20></p>
+  <p><strong>Retrieved datasets from: </strong><a href="https://www.kaggle.com/datasets/the-guardian/olympic-games/data">Kaggle</a></p>
+  <h3>Dictionary Dataset</h3>
   <table>
     <thead>
       <tr>
@@ -18,7 +20,7 @@
         <td>Country Name</td>
         <td>Full name of the country</td>
         <td>Geographical</td>
-        <td>SString</td>
+        <td>String</td>
       </tr>
       <tr>
         <td>Country Code</td>
@@ -28,7 +30,34 @@
       </tr>
       <tr>
         <td>Population</td>
-        <td>Number of citizens in country</td>
+        <td>Number of citizens in country (updated 2014)</td>
+        <td>Continuous</td>
+        <td>Whole Number</td>
+      </tr>
+      <tr>
+        <td>GDP Per Capita</td>
+        <td>GDP for the country (updated latest 2014)</td>
+        <td>Continuous</td>
+        <td>Float</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Summer and Winter Datasets</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Dataset</th>
+        <th>Columns of note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Summer Olympic Games (1986 to 2014)</th>
+        <th></th>
+      </tr>
+      <tr>
+        <th>Winter Olympic Games (1986 to 2014)</th>
+        <th></th>
       </tr>
     </tbody>
   </table>
