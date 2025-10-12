@@ -135,11 +135,22 @@
       <tr>
         <td>Random Forest Classifier</td>
         <td>No</td>
-        <td>0.9793 (97.93%)</td>
+        <td>0.9795 (97.95%)</td>
       </tr>
       <tr>
         <td>Random Forest Classifier</td>
-        <td>Yes - Hyperparameter tuning (</td>
+        <td>Yes - Hyperparameter tuning (n_estimators, max_depth, min_samples_leaf, min_samples_split, max_features, class_weight, n_jobs)</td>
+        <td>0.9742 (97.42%)</td>
+      </tr>
+      <tr>
+        <td>XGBoost Classifier</td>
+        <td>No</td>
+        <td>0.978 (97.8%)</td>
+      </tr>
+      <tr>
+        <td>XGBoost Classifier</td>
+        <td>Yes - Hyperparameter tuning (max_depth , min_child_weight, gamma, subsample, colsample_bytree, reg_alpha, learning_rate, n_estimators)</td>
+        <td>0.9879 (98.79%)</td>
       </tr>
     </tbody>
   </table>
