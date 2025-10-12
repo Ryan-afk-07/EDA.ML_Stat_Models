@@ -48,16 +48,19 @@
       <tr>
         <th>Dataset</th>
         <th>Columns of note</th>
+        <th>Link to dataset</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th>Summer Olympic Games (1986 to 2014)</th>
-        <th></th>
+        <th>Year, Sport, Discipline, Country, Gender, Medal</th>
+        <th><a href="">Summer csv link</a></th>
       </tr>
       <tr>
         <th>Winter Olympic Games (1986 to 2014)</th>
-        <th></th>
+        <th>Year, Sport, Discipline, Country, Gender, Medal</th>
+        <th><a href="">Winter csv link</a></th>
       </tr>
     </tbody>
   </table>
