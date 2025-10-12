@@ -108,7 +108,7 @@
   <h2>Feature Selection</h2>
   <p><strong>Techniques used:</strong> Feature importance Profilling, Heatmap Correlation</p>
   <p><strong>Eventual features used</strong>: Satisfaction Level, Average Monthly Hours, Salary, Last 5 years promotion, Time Spend in Company</p> <br>
-  <img src="" height=100>
+  <img src="C:\Users\user\Desktop\Data_Stuffs\Portfolio_Projects\Google_Analytics_Capstone_HRAnalytics\feature_importances_final.png" height=100>
 </div>
 
 <div>
