@@ -5,9 +5,9 @@
 <table>
   <thead>
     <tr>
-      <td>Project Name</td>
-      <td>Main Model explored</td>
-      <td>Project Link</td>
+      <th>Project Name</td>
+      <th>Main Model explored</td>
+      <th>Project Link</td>
     </tr>
   </thead>
   <tbody>
