@@ -1,5 +1,5 @@
 <h1>Machine Learning, Statistical Models</h1>
-<p>Primarily done using <img src="https://www.python.org/static/community_logos/python-logo.png" height=20> <br>Flask appplication is employed in some projects</p>
+<p>Primarily done using <img src="https://www.python.org/static/community_logos/python-logo.png" height=20> <br>Flask application is employed in some projects</p>
 
 <p>Refer below for the list of ML models</p>
 <table>
