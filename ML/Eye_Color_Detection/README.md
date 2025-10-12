@@ -1,4 +1,4 @@
-<h1 align='center'>Detecting eye color using simple CNN algorithm</h1>
+<h1 align='center'>Detecting eye color through the use of a simple CNN model</h1>
 
 <div>
   <p><strong>Project primarily done with:<br></strong> Python and Tensorflask for CNN model <br>
