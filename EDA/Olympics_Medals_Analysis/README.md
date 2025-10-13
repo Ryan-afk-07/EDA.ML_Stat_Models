@@ -73,15 +73,21 @@
 </div>
 <div>
   <h2>Exploratory Data Visualization</h2>
-  <strong>1. Created chloropleth maps to show spread of Olympic medal counts </strong>
+  <strong>1. Created chloropleth maps for summer and winter olympics to show spread of Olympic medal counts </strong> <br>
+  <strong>Summer Olympic games</strong>
   <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Olympics_Medals_Analysis/newplot.png">
   <p>You may view the entire cloropleth visualization gif via this <a href="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Olympics_Medals_Analysis/summer.html">Link</a></p>
+  <strong>Winter Olympic games</strong>
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Olympics_Medals_Analysis/newplot_winter.png">
+  <p>You may view the entire chloropleth map visualization gif via this <a href="">Link</a></p>
   <p>Findings: <br>
-    1. Prior to 1990s, Asia did not have a huge representation in the Summer Olympic Games. Was mostly America and Europe <br>
+    1. Prior to 1990s, Asia did not have a huge representation in the Summer and Winter Olympic Games. Was mostly America and Europe <br>
     2. Number of medals issued per each subsequent Summer olympic games increases. This would most likely be due to the inclusion of more varied sport disciplines
     3. America is a consistent top few performer across all Summer Olympic games
+    4. There was evidently lesser medals given in the Winter games than Summer games. Most likely due to then (and now) winter games having rather lesser disciplines than summer games.
+    5. Medal distribution was rather evenly distributed across. There seems to not be a trend in which one country consistently performed.
   </p>
   <strong>2. Created Correlation Heatmap in an effort to find out if a change in medal count may be related to a update in GDP or population</strong>
-  <img src="">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Olympics_Medals_Analysis/Correlation_medals.png">
   
 </div>
