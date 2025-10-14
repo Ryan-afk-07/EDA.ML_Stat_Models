@@ -89,5 +89,10 @@
   </p>
   <strong>2. Created Correlation Heatmap in an effort to find out if a change in medal count may be related to a update in GDP or population</strong>
   <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Olympics_Medals_Analysis/Correlation_medals.png">
+
+  <p>
+    Findings: <br>
+    1. Heatmap/Correlation Map does show population and GDP Per Capita having some sort of positive correlation or relation with number of medals attained by the country for that year
+  </p>
   
 </div>
