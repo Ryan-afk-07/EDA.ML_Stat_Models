@@ -16,6 +16,11 @@
       <td>Convolution Neural Network (CNN) models</td>
       <td><a href="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/tree/main/ML/Eye_Color_Detection">Click here</a></td>
     </tr>
+    <tr>
+      <td>HR Predictive Analytics (Retain, Departure)</td>
+      <td>Decision Tree, Random Forest, XGBoost Classifier</td>
+      <td><a href="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/tree/main/ML/HR_Analytics_Prediction">Click here</a></td>
+    </tr>
   </tbody>
 </table>
 
