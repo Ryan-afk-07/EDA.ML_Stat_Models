@@ -7,7 +7,8 @@
 
 <div>
   <h2>Webpage</h2>
-  <img src="">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/ML/Eye_Color_Detection/Webpage_CNN_model.png">
+  <i>Note - Display of the webpage will be improved</i>
 </div>
 
 <div>
@@ -21,4 +22,9 @@
   <p>1. Image contrast pre-processing using CLAHE (Adaptive Histogram Equalizer)</p>
   <p>2. Balancing number of samples in training and validation sets</p>
   <p>3. Image scaling and normalization of both trainig and validation image sets</p>
+</div>
+
+<div>
+  <h2>Training of CNN Model, Feedback Eliminator/Resoluter</h2>
+  
 </div>
