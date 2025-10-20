@@ -2,7 +2,7 @@
 
 <div>
   <h2>General Information, Dataset Metadata</h2>
-  <strong>Dataset retrieved from <a href="https://www.kaggle.com/datasets/dkhalidashik/uber-trips-data">Kaggle</a></strong>
+  <strong>Dataset retrieved from <a href="https://www.kaggle.com/datasets/dkhalidashik/uber-trips-data">Kaggle</a></strong> <br>
   <table>
     <thead>
       <tr>
