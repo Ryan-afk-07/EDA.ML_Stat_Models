@@ -55,4 +55,6 @@
     <strong>1. </strong> Created visualizations to view total number of trips in the region across months and days.
     <strong>2. </strong> Created visualizations to view number of trips in the region across months and days grouped by bases (get a good view of which base is heavily used)
   </p>
+  <img src="">
+  <p></p>
 </div>
