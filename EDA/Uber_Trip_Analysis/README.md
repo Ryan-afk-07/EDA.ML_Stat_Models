@@ -2,7 +2,8 @@
 
 <div>
   <h2>General Information, Dataset Metadata</h2>
-  <strong>Dataset retrieved from <a href="https://www.kaggle.com/datasets/dkhalidashik/uber-trips-data">Kaggle</a></strong> <br>
+  <strong>Dataset retrieved from <a href="https://www.kaggle.com/datasets/dkhalidashik/uber-trips-data">Kaggle</a></strong>
+  <p></p>
   <table>
     <thead>
       <tr>
@@ -55,6 +56,15 @@
     <strong>1. </strong> Created visualizations to view total number of trips in the region across months and days.
     <strong>2. </strong> Created visualizations to view number of trips in the region across months and days grouped by bases (get a good view of which base is heavily used)
   </p>
+  <strong>Visualizations of trends</strong>
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Uber_Trip_Analysis/Visualization1_tripcount_aprtosep.png">
   <img src="">
-  <p></p>
+</div>
+<div>
+  <h2>Observations, Insights</h2>
+  <p>
+    <strong>1. </strong> Trips are generally more at the later months (Sep) <br>
+    <strong>2. </strong> Trips are generally more frequent at the later hours of the day
+    <strong>3. </strong> No strong correlation with regards to dates and Uber trips - Cabs/User is equally frequent across all days of the month
+  </p>
 </div>
