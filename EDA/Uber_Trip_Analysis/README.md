@@ -58,13 +58,19 @@
   </p>
   <strong>Visualizations of trends</strong>
   <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Uber_Trip_Analysis/Visualization1_tripcount_aprtosep.png">
-  <img src="">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Uber_Trip_Analysis/Visualization2_tripcount_aprtosep.png">
 </div>
 <div>
   <h2>Observations, Insights</h2>
   <p>
     <strong>1. </strong> Trips are generally more at the later months (Sep) <br>
-    <strong>2. </strong> Trips are generally more frequent at the later hours of the day
-    <strong>3. </strong> No strong correlation with regards to dates and Uber trips - Cabs/User is equally frequent across all days of the month
+    <strong>2. </strong> Trips are generally more frequent at the later hours of the day <br>
+    <strong>3. </strong> No strong correlation with regards to dates and Uber trips - Cabs/User is equally frequent across all days of the month <br>
+    <strong>4. </strong> Bases B02512 and B02764 have vastly lesser Uber Pickup and trips across the months than the rest.
   </p>
+</div>
+<div>
+  <h2>Exploratory Data Analysis of Location Trends for Uber Trips</h2>
+  <strong>Visualizations</strong>
+  <img src="">
 </div>
