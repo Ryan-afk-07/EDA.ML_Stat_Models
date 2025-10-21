@@ -76,5 +76,7 @@
   <p>
     <strong>Observations, Findings</strong> <br>
     <strong>1. </strong> B02764 has a substantial amount of trips undertaken on September. It is also seen to be consistent at the middle region of the US city taken.
+    <strong>2. </strong> 02682 is consistently plenty and picked up or used at similar locations from April to August. Only outlier would be September.
+    <strong>3. </strong> B02617 is consistently picked up at rather consistent locations as well. However rates are rather varied (drops on Jun and Aug)
   </p>
 </div>
