@@ -2,6 +2,7 @@
 <div>
   <h2>General Information, Dataset Metadata</h2>
   <p>Dataset retrieved from <a href="">Kaggle</a></p>
+  <p><strong>Dataset 1: </strong>Personal Information of Customers, Marketing Campaign reviews</p>
   <table>
     <thead>
       <tr>
@@ -80,4 +81,40 @@
       </tr>
     </tbody>
   </table>
+  <p><strong>Dataset 2: </strong>Amount of Goods per category bought by customers</p>
+  <table>
+    <thead>
+      <tr>Column/Columns Names</tr>
+      <tr>Column/Columns Descriptions</tr>
+      <tr>Data Type(s)</tr>
+      <tr>Data Format(s)</tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MntWines, MntFruits, MntMeatProducts, MntFishProducts, MntSweetProducts. MntGoldProducts</td>
+        <td>Amount of Wine Products, Fruit Products, Meat Products, Fish Products, Sweets and Gold purchased by the individual during the visit</td>
+        <td>Continuous</td>
+        <td>Integer/Whole Number</td>
+      </tr>
+      <tr>
+        <td>MntTotal</td>
+        <td>Total Amount of Products/Items purchased by individual</td>
+        <td>Continuous</td>
+        <td>Integer/Whole Number</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+  <h2>Data Cleaning, Pre-processing, Transformation</h2>
+  <p>
+    <strong>1. </strong> Observed Traits of dataset using .info(), .describe(), .shape(), .nunique() <br>
+    <strong>2. </strong> Removed all irrelevant na values <br>
+    <strong>3. </strong> Performed transformation of following columns: <br>
+    <pre>I. Updated Income column to float data format for ease of calculations in the later stages</pre> <br>
+    <pre>II. Created a Dependents column from the sum of Teens and Kids.</pre> <br>
+    <pre>III. Created a total Purchase column from summing all Purchase named columns </pre><br>
+    <pre>IV. Created a totalCampaignAcc column by summing all the Marketing Campaigns that had successfully influenced individual to purchase</pre>
+    <pre>V. Did one hot/label encoding for education and Marital Status for ease of visualization and modeling</pre>
+  </p>
 </div>
