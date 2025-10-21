@@ -72,5 +72,9 @@
 <div>
   <h2>Exploratory Data Analysis of Location Trends for Uber Trips</h2>
   <strong>Visualizations</strong>
-  <img src="">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Uber_Trip_Analysis/Visualization3_location_aprtosep.png">
+  <p>
+    <strong>Observations, Findings</strong> <br>
+    <strong>1. </strong> B02764 has a substantial amount of trips undertaken on September. It is also seen to be consistent at the middle region of the US city taken.
+  </p>
 </div>
