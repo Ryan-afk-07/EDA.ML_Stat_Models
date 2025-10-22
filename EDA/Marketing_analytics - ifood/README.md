@@ -122,8 +122,11 @@
 <div>
   <h2>Exploratory Data Analysis</h2>
   <p>Mainly did a correlation heatmap for the purposes of subsequent modeling of trends and patterns - base plots seemed a little unnecessary due to the many variables and factors</p>
-  <img src="">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Marketing_analytics%20-%20ifood/Heatmap_elements.png">
 </div>
 <div>
   <h2>Observations </h2>
+  <p>
+    <strong>1. </strong> According to the heatmap visualization, Campaign effectiveness is rather strongly correlated with income, Amounts of Meat and Wine products purchased.
+  </p>
 </div>
