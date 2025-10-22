@@ -21,6 +21,11 @@
       <td>Decision Tree, Random Forest, XGBoost Classifier</td>
       <td><a href="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/tree/main/ML/HR_Analytics_Prediction">Click here</a></td>
     </tr>
+    <tr>
+      <td>Marketing Campaign Analytics (Ifood)</td>
+      <td>Linear Regression, Logistic Regression</td>
+      <td><a href="">Click here</a></td>
+    </tr>
   </tbody>
 </table>
 
