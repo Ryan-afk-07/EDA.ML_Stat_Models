@@ -113,8 +113,17 @@
     <strong>3. </strong> Performed transformation of following columns: <br>
     <pre>I. Updated Income column to float data format for ease of calculations in the later stages</pre> <br>
     <pre>II. Created a Dependents column from the sum of Teens and Kids.</pre> <br>
-    <pre>III. Created a total Purchase column from summing all Purchase named columns </pre><br>
+    <pre>III. Created a total Purchase and Total Amount column from summing all Purchase and Mnt named columns respectively </pre><br>
     <pre>IV. Created a totalCampaignAcc column by summing all the Marketing Campaigns that had successfully influenced individual to purchase</pre>
     <pre>V. Did one hot/label encoding for education and Marital Status for ease of visualization and modeling</pre>
+  <strong>4. </strong> Dropped all irrelevant columns/non numerical columns for the purposes of subsequent visualizations.
   </p>
+</div>
+<div>
+  <h2>Exploratory Data Analysis</h2>
+  <p>Mainly did a correlation heatmap for the purposes of subsequent modeling of trends and patterns - base plots seemed a little unnecessary due to the many variables and factors</p>
+  <img src="">
+</div>
+<div>
+  <h2>Observations </h2>
 </div>
