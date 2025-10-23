@@ -60,3 +60,18 @@
     <strong>4. </strong> Retrieval of top 10 IMDB scored films in popular categories
   </p>
 </div>
+<div>
+  <h2>Exploratory Data Analysis/Visualization</h2>
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Netflix%20EDA/top10IMDBrated_popmoviecat.png">
+  <p>
+    <strong>Observations</strong> <br>
+    1. Documentary films are seen to have generally the best IMDB rated films. Based on the top 10 films, they are also seen to be consistently high throughout the 10 films <br>
+    2. Action and Science Fiction films have lower IMDB rated films <br>
+    3. Action films do also have varying drops throughout their scoring rating throughout the 10 films. So do horror films.
+  </p>
+</div>
+<div>
+  <h2>Extra Visualization</h2>
+  <p>Created gif of the above top 10 IMDB scored films - gif will rotate through images based on their category</p>
+  <img src="">
+</div>
