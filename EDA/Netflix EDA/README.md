@@ -73,5 +73,5 @@
 <div>
   <h2>Extra Visualization</h2>
   <p>Created gif of the above top 10 IMDB scored films - gif will rotate through images based on their category</p>
-  <img src="">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Netflix%20EDA/animation2.gif">
 </div>
