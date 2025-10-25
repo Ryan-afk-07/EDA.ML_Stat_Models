@@ -124,12 +124,14 @@
   <p>Mainly did a correlation heatmap for the purposes of subsequent modeling of trends and patterns. Seemed to be able to visualize correlation of all columns in the dataset and if they have correlation with other parameters/columns</p>
   <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Marketing_analytics%20-%20ifood/Heatmap_elements.png"> <br>
   <p>Background understanding from news/discussions, having a higher income will likely influence individuals to purchase more goods. Hence doing more visualizations to compare income with number of goods purchased. In addition, also viewing if having dependents affect ones willingness to purchase goods</p>
-  <img src="">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Marketing_analytics%20-%20ifood/Income_Goodspurchased_dependents.png">
 </div>
 <div>
   <h2>Observations </h2>
   <p>
-    <strong>1. </strong> According to the heatmap visualization, Campaign effectiveness is rather strongly correlated with income, Amounts of Meat and Wine products purchased.
-    <strong>2. </strong> According to the heatmap visualization as well, Campaign effectiveness seems to be negatively related with Dependents.
+    <strong>1. </strong> According to the heatmap visualization, Campaign effectiveness is rather strongly correlated with income, Amounts of Meat and Wine products purchased. <br>
+    <strong>2. </strong> According to the heatmap visualization as well, Campaign effectiveness seems to be negatively related with Dependents. <br>
+    <strong>3. </strong> Based on the scatter plot, income does seem to correlate with number of goods purchased (Total). <br>
+    <strong>4. </strong> Dependents does really relate to the number of goods purchased from ifood. Customers with more dependents do seem to have a lower range of goods purchased.
   </p>
 </div>
