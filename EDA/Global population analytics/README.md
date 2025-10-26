@@ -142,4 +142,12 @@
 </div>
 <div>
   <h2>Pre-processing, Cleaning, Transformation of Data</h2>
+  <p>
+    <strong>1. </strong> Data has no null values when retrieved raw. No cleaning is actually done <br>
+    <strong>2. </strong> Data types for certain integer intended columns are given as strings, with unnecessary symbols added either before or after the important values. Did data format cleaning to ensure columns that are meant to be strings are strings, those that are integers, and those that are meant to be floats <br>
+    <strong>3. </strong> Checked the information of each column (max, min, count, mean etc) using .info and .describe
+  </p>
+</div>
+<div>
+  <h2>Exploratory Data Analysis, Visualization</h2>
 </div>
