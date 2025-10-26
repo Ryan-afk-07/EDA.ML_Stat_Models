@@ -2,6 +2,7 @@
 
 <div>
   <h2>General Information, Dataset Metadata</h2>
+  <p>Retrieved from <a href="https://www.kaggle.com/datasets/luiscorter/netflix-original-films-imdb-scores">Kaggle</a></p>
   <table>
     <thead>
       <tr>
