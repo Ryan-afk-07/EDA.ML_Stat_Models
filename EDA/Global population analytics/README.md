@@ -89,6 +89,57 @@
         <td>Continuous (Geographical dependent)</td>
         <td>Float</td>
       </tr>
+      <tr>
+        <td>GDP</td>
+        <td>Gross Domestic Product of a country</td>
+        <td>Continuous</td>
+        <td>Float</td>
+      </tr>
+      <tr>
+        <td>Minimum Wage</td>
+        <td>Designated lowest salary paid to a worker in the specified country</td>
+        <td>Continuous</td>
+        <td>Float (possess a $ symbol at the start)</td>
+      </tr>
+      <tr>
+        <td>Official Language</td>
+        <td>Main/Most commonly used language in the country</td>
+        <td>Categorical/Geographical</td>
+        <td>String</td>
+      </tr>
+      <tr>
+        <td>Population</td>
+        <td>Number of residents in the country</td>
+        <td>Continuous (grouped by geography)</td>
+        <td>Integer/Whole Number</td>
+      </tr>
+      <tr>
+        <td>Population: Labor force participation</td>
+        <td>Percentage of residents in the country that are actively working or part of the labor force</td>
+        <td>Continuous</td>
+        <td>Float (percentage)</td>
+      </tr>
+      <tr>
+        <td>Unemployment Rate</td>
+        <td>Percentage of labor market/eligible residents actively seeking a job/not working</td>
+        <td>Continuous</td>
+        <td>Float (percentage)</td>
+      </tr>
+      <tr>
+        <td>Urban Population</td>
+        <td>Population of residents living in rather urbanized areas</td>
+        <td>Continuous</td>
+        <td>Float</td>
+      </tr>
+      <tr>
+        <td>Latitude, Longitude</td>
+        <td>Position of country in the world (length, height)</td>
+        <td>Geographical</td>
+        <td>Integer/Float</td>
+      </tr>
     </tbody>
   </table>
+</div>
+<div>
+  <h2>Pre-processing, Cleaning, Transformation of Data</h2>
 </div>
