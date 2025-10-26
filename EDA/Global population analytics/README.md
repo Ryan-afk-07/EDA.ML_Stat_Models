@@ -53,6 +53,42 @@
         <td>Continuous</td>
         <td>Float (percentage)</td>
       </tr>
+      <tr>
+        <td>Calling Code</td>
+        <td>Codes of country - particularly for phone calls across countries/zones</td>
+        <td>Geographical/Categorical</td>
+        <td>Integer/Whole Number</td>
+      </tr>
+      <tr>
+        <td>Capital/Major City</td>
+        <td>Capital of the country</td>
+        <td>Geographical</td>
+        <td>String</td>
+      </tr>
+      <tr>
+        <td>CO2 Emissions</td>
+        <td>Emissions of CO2 produced by the country</td>
+        <td>Continuous (Geography affected)</td>
+        <td>Whole Number/Integer</td>
+      </tr>
+      <tr>
+        <td>Currency-Code</td>
+        <td>Code for currency of the country</td>
+        <td>Geographical/Categorical</td>
+        <td>Integer/Whole Number</td>
+      </tr>
+      <tr>
+        <td>Gross primary and tertiary education enrollment </td>
+        <td>Gross perentage of citizens in country with primary education and tertiary education</td>
+        <td>Geographical/Categorical</td>
+        <td>Float (percentage)</td>
+      </tr>
+      <tr>
+        <td>Life Expectancy</td>
+        <td>Average age a citizen in a country lives until death</td>
+        <td>Continuous (Geographical dependent)</td>
+        <td>Float</td>
+      </tr>
     </tbody>
   </table>
 </div>
