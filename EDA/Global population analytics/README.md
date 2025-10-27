@@ -150,4 +150,9 @@
 </div>
 <div>
   <h2>Exploratory Data Analysis, Visualization</h2>
+  <p>
+    <strong>1. </strong> Performed various barplot visualizations to view the top few countries with big populations, as well as top economic and environmental factors - each visualization is coupled with their population/land size to view if performing factors are affected by size or number of people in the country. <br>
+    <strong>2. </strong> Did a generic heatmap/correlation heatmap to check if certain parameters (social, economic, environmental) are correlated or are in relation with another factor
+  </p>
+  <img src="">
 </div>
