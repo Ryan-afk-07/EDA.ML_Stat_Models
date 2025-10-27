@@ -154,5 +154,5 @@
     <strong>1. </strong> Performed various barplot visualizations to view the top few countries with big populations, as well as top economic and environmental factors - each visualization is coupled with their population/land size to view if performing factors are affected by size or number of people in the country. <br>
     <strong>2. </strong> Did a generic heatmap/correlation heatmap to check if certain parameters (social, economic, environmental) are correlated or are in relation with another factor
   </p>
-  <img src="">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Global%20population%20analytics/population_visualization.png">
 </div>
