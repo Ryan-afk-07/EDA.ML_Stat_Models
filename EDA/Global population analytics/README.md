@@ -155,4 +155,16 @@
     <strong>2. </strong> Did a generic heatmap/correlation heatmap to check if certain parameters (social, economic, environmental) are correlated or are in relation with another factor
   </p>
   <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Global%20population%20analytics/population_visualization.png">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Global%20population%20analytics/top_10_econ_environ.png">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/EDA/Global%20population%20analytics/correlationmap_demograpics.png">
+</div>
+<div>
+  <h2>EDA Observations</h2>
+  <p>
+    <strong>1. </strong> In terms of population metrics (armed force size, labor force and urban force) - China and India are consistently up in the top 10. US as well. But not throughout all tiers of population <br>
+    <strong>2. </strong> Top countries with positive economic and environmental do not all have big populations. <br>
+    <strong>3. </strong> Countries with high population density (i.e. Monaco and Singapore), do not necessarily have major land area. <br>
+    <strong>4. </strong> According to the correlation map, population related metrics are strongly positively correlated with each other, as well as certain demographical factors like GDP and CO2 emissions. <br>
+    <strong>5. </strong> Mortality and Fertility rate is negatively correlated with educational factors, as well as life expectancy and physicians count
+  </p>
 </div>
