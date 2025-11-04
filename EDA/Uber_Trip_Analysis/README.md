@@ -1,7 +1,14 @@
 <h1 align="center">Exploratory Data Analysis of Uber Trips in US</h1>
-
+<div>
+  <h2>Project/EDA Objective</h2>
+  <p>
+    To find out patterns and trends of Uber uptakes in US are present between months, days and hours. To also find out if there is a pattern in which certain Uber app groups are widely used in a specific location as well.
+  </p>
+</div>
 <div>
   <h2>General Information, Dataset Metadata</h2>
+  <p><strong>Primarily used with:</strong> <img src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" height=20 width=20>
+    <img src="https://jupyter.org/assets/homepage/main-logo.svg" height=20 width=20></p>
   <strong>Dataset retrieved from <a href="https://www.kaggle.com/datasets/dkhalidashik/uber-trips-data">Kaggle</a></strong>
   <p></p>
   <table>
