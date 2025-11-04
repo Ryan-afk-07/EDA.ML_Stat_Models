@@ -1,5 +1,8 @@
 <h1 align='center'>EDA of Olympic Medals by Country (Summer/Winter)</h1>
-
+<div>
+  <h2>Project/EDA Objective</h2>
+  <p>To understand the trend and growth of the Summer and Winter olympic scene from 1990s to 2014. To find out patterns between economic factors (size, population, GDP) with performance of a country for olympic games. Finding out if there is a possibility for modeling as well.</p>
+</div>
 <div>
   <h2>General Information, Dataset Metadata</h2>
   <p><strong>Primarily used with:</strong> <img src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" height=20 width=20>
