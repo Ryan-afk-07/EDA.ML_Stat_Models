@@ -1,6 +1,12 @@
 <h1 align="center">Exploratory Data Analysis of Netflix Films/Ratings</h1>
 
 <div>
+  <h2>Project/EDA Objectives</h2>
+  <p>
+    Visualizing ratings of Netflix shows according to their various genres, through which to hopefully find out if certain genres will likely have a general better rating or score by IMDA. Investigated and experimented with dynamic visualizations (gifs) as well for creativity of visualizations.
+  </p>
+</div>
+<div>
   <h2>General Information, Dataset Metadata</h2>
   <p>Retrieved from <a href="https://www.kaggle.com/datasets/luiscorter/netflix-original-films-imdb-scores">Kaggle</a></p>
   <table>
