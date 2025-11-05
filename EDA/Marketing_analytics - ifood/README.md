@@ -1,6 +1,15 @@
 <h1 align='center'>Marketing Analytics of Ifood Company</h1>
 <div>
+  <h2>Project/EDA Objectives</h2>
+  <p>
+    Exploring the effectiveness of Ifood's 5 marketing campaigns, and additionally exploring groups of customers greatly influenced by each marketing campaign. Exploration does also seek to find out particular categories of Ifood's products heavily influenced or is heavily consumed after a particular marketing campaign is initiated.
+  </p>
+</div>
+<div>
   <h2>General Information, Dataset Metadata</h2>
+  <p><strong>Primarily used with:</strong> <img src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" height=20 width=20>
+    <img src="https://jupyter.org/assets/homepage/main-logo.svg" height=20 width=20></p>
+  <p></p>
   <p>Dataset retrieved from <a href="">Kaggle</a></p>
   <p><strong>Dataset 1: </strong>Personal Information of Customers, Marketing Campaign reviews</p>
   <table>
