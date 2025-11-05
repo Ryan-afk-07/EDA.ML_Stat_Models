@@ -1,6 +1,16 @@
 <h1 align='center'>World Demographics, Population Analysis/EDA</h1>
 <div>
+  <h2>Project/EDA Objectives</h2>
+  <p>
+    Project/EDA seeks to find out and visualize relationships between specific demographic factors and economic/environmental factors (i.e. if an increase in population has a relation to higher environmental gases produced). Exploration is also performed with the intention to see if future modelling (regression, trees) is possible and could be explored as well.
+  </p>
+</div>
+<div>
   <h2>General Information, Dataset Metadata</h2>
+  <p><strong>Primarily used with:</strong> <img src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" height=20 width=20>
+    <img src="https://jupyter.org/assets/homepage/main-logo.svg" height=20 width=20></p>
+  <strong>Dataset retrieved from <a href="">Kaggle</a></strong>
+  <p></p>
   <table>
     <thead>
       <tr>
