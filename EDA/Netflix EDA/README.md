@@ -9,6 +9,9 @@
 <div>
   <h2>General Information, Dataset Metadata</h2>
   <p>Retrieved from <a href="https://www.kaggle.com/datasets/luiscorter/netflix-original-films-imdb-scores">Kaggle</a></p>
+  <p><strong>Primarily used with:</strong> <img src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" height=20 width=20>
+    <img src="https://jupyter.org/assets/homepage/main-logo.svg" height=20 width=20></p>
+  <p></p>
   <table>
     <thead>
       <tr>
