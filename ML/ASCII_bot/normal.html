@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normal Type Pokemon ASCII Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/normal.css">
+</head>
+
+<body>
+  <div class="pokemon_box">
+    <div class="pokemon_slider">
+      <div class="pidgey">
+        <div>
+          <h2>Pidgey</h2>
+        </div>
+        <img src="pictures/016 - Pidgey.png">
+      </div>
+      <div class="pidgeotto">
+        <div>
+          <h2>Pidgeotto</h2>
+        </div>
+        <img src="pictures/017 - Pidgeotto.png">
+      </div>
+      <div class="pidgeot">
+        <div>
+          <h2>Pidgeot</h2>
+        </div>
+        <img src="pictures/018 - Pidgeot.png">
+      </div>
+      <div class="rattata">
+        <div>
+          <h2>Rattata</h2>
+        </div>
+        <img src="pictures/019 - Rattata.png">
+      </div>
+    </div>
+  </div>
+  <div class="navigation">
+    <span class="prev-btn">
+      <i class="bx bx-chevron-left"></i>
+    </span>
+    <span class="next-btn">
+      <i class="bx bx-chevron-right"></i>
+    </span>
+  </div>
+
+
+  <script>
+    const slider = document.querySelector('.pokemon_slider');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+
+    const slidewidth = 400;
+    const totalslides = 5
+    let index = 0;
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % totalslides;
+
+      slider.style.transform = `translateX(${-index * slidewidth}px)`;
+    });
+
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + totalslides) % totalslides;
+      slider.style.transform = `translateX(${-index * slidewidth}px)`;
+    });
+  </script>
+</body>
+
+</html>

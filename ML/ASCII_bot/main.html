@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon ASCII Art Generator</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+  <div class="gen_container">
+    <h1>Select Pokemon Generation</h1>
+    <ul>
+      <li><a href='/gen1/' type='button'>Gen 1</a></li>
+      <li><a href='/gen2/' type='button'>Gen 2</a></li>
+      <li><a href='/gen3/' type='button'>Gen 3</a></li>
+      <li><a href='/gen4/' type='button'>Gen 4</a></li>
+      <li><a href='/gen5/' type='button'>Gen 5</a></li>
+      <li><a href='/gen6/' type='button'>Gen 6</a></li>
+      <li><a href='/gen7/' type='button'>Gen 7</a></li>
+      <li><a href='/gen8/' type='button'>Gen 8</a></li>
+      <li><a href='/gen9/' type='button'>Gen 9</a></li>
+    </ul>
+  </div>
+  <div class="type_container">
+    <h1>Select Pokemon Type</h1>
+    <ul>
+      <li><a href='/normal'>Normal</a></li>
+      <li><a href='/fire'>Fire</a></li>
+      <li><a href='/water'>Water</a></li>
+      <li><a href='/electric'>Electric</a></li>
+      <li><a href='/grass'>Grass</a></li>
+      <li><a href='/ice'>Ice</a></li>
+      <li><a href='/fighting'>Fighting</a></li>
+      <li><a href='/poison'>Poison</a></li>
+      <li><a href='/ground'>Ground</a></li>
+      <li><a href='/flying'>Flying</a></li>
+      <li><a href='/psychic'>Psychic</a></li>
+      <li><a href='/bug'>Bug</a></li>
+      <li><a href='/rock'>Rock</a></li>
+      <li><a href='/ghost'>Ghost</a></li>
+      <li><a href='/dragon'>Dragon</a></li>
+      <li><a href='/dark'>Dark</a></li>
+      <li><a href='/steel'>Steel</a></li>
+      <li><a href='/fairy'>Fairy</a></li>
+    </ul>
+  </div>
+  <div class="chat-container">
+    <div class="chat-box">
+      <div class="chat-display"></div>
+    </div>
+    <input type="text" id="user-input" placeholder="Pokefan, ask me anything about Pokemon!">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</body>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script>
+  const colors = ['white', 'red', 'blue', 'yellow', 'lightgreen', 'cyan', 'orange', 'purple', 'darkorange', 'white', 'violet'];
+  const typeItems = document.querySelectorAll('.type_container ul li');
+  typeItems.forEach((item, index) => {
+    item.style.background = colors[index % colors.length];
+  });
+
+  const socket = io("http://localhost:5000");
+  async function sendMessage() {
+    const input = document.getElementById("user-input");
+    socket.emit('user_message', { message: input.value });
+    input.value = "";
+  }
+  socket.on('bot_reply', function (data) {
+    const chatDisplay = document.querySelector('.chat-display');
+    const botMessage = document.createElement('div');
+    botMessage.classList.add('bot-message');
+    botMessage.textContent = data.reply;
+    chatDisplay.appendChild(botMessage);
+    chatDisplay.scrollTop = chatDisplay.scrollHeight;
+  });
+</script>
+
+</html>

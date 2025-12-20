@@ -1,0 +1,7 @@
+
+.pokemon_slider div{
+    display: flexbox;
+    height: 100px;
+    width: 100px;
+    background: red;
+}

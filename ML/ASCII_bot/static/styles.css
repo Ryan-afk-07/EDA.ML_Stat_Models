@@ -1,0 +1,47 @@
+.gen_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.gen_container ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+
+.gen_container li{
+    display: flexbox;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 2.5px;
+    font-size: 12px;
+}
+.type_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.type_container ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.type_container li{
+    display: flexbox;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
