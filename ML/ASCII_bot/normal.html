@@ -12,89 +12,110 @@
 </head>
 
 <body>
+  <div class="search_wrapper" id="searchWrapper">
+    <input type="text" id="searchInput" placeholder="Search Pokémon..." , oninput="filterPokemon()">
+    <span id="search-icon"><img src="pictures/pokeball.png"></span>
+  </div>
   <div class="bg_carousel">
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="bulbasaur">
       <img src="pictures\bulbasaur_background.png">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="ivysaur">
       <img src="pictures\ivysaur_background.png">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="venusaur">
       <img src="pictures\venusaur_background.png">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="charmander">
       <img src="pictures\charmander_background.jpg">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="charmeleon">
       <img src="pictures\charmeleon_background.jpg">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="charizard">
       <img src="pictures\charizard_background.jpg">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="squirtle">
       <img src="pictures\squirtle_background.png">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="wartortle">
       <img src="pictures\wartortle_background.png">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="blastoise">
       <img src="pictures\blastoise_background.png">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="caterpie">
       <img src="pictures/caterpie_background.jpg">
     </div>
-    <div class="poke_bg">
-      <img src="pictures/metapod_background.png">
+    <div class="poke_bg" data-name="metapod">
+      <img src="pictures/metapod_background.jpg">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="butterfree">
       <img src="pictures/butterfree_background.jpg">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="pidgey">
       <img src="pictures/pidgey_background.png">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="pidgeotto">
       <img src="pictures/pidgeotto_background.jpg">
     </div>
-    <div class="poke_bg">
+    <div class="poke_bg" data-name="pidgeot">
       <img src="pictures/pidgeot_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="rattata">
+      <img src="pictures/rattata_background.jpg">
     </div>
   </div>
   <div class="pokemon_box">
     <div class="pokemon_slider">
-      <div class="bulbasaur grass poison">
+      <div class="bulbasaur grass poison pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Bulbasaur</h2>
           <img src="pictures/pokemon types - grass poison.png" class="type-icon">
         </div>
-        <img src="pictures/001 - Bulbasaur.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/001 - Bulbasaur.png">
+        </div>
       </div>
-      <div class="ivysaur grass poison">
+      <div class="ivysaur grass poison pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Ivysaur</h2>
           <img src="pictures/pokemon types - grass poison.png" class="type-icon">
         </div>
-        <img src="pictures/002 - Ivysaur.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/002 - Ivysaur.png">
+        </div>
       </div>
-      <div class="venusaur grass poison">
+      <div class="venusaur grass poison pokemon-card" data-has-mega='true'>
         <div class="name">
           <h2>Venusaur</h2>
           <img src="pictures/pokemon types - grass poison.png" class="type-icon">
         </div>
-        <img src="pictures/003 - Venusaur.png">
-      </div>
-      <div class="charmander fire">
-        <div class="name_charmander">
-          <h2>Charmander</h2>
-          <img src="pictures/pokemon types - fire only.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/003 - Venusaur.png">
+          <img class="sprite mega" src="pictures/003 - Mega Venusaur.png">
         </div>
-        <img src="pictures/004 - Charmander.png">
+        <button type="button" onclick="" class="mega-btn" , data-form="mega">
+          <img src="pictures/mega_symbol.png">
+        </button>
       </div>
-      <div class="charmeleon fire">
+      <div class="charmander fire pokemon-card" data-has-mega='false'>
+        <div class="name">
+          <h2>Charmander</h2>
+          <img src="pictures/pokemon types - fire only.png" class="type-icon">
+        </div>
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/004 - Charmander.png">
+        </div>
+      </div>
+      <div class="charmeleon fire pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Charmeleon</h2>
-          <img src="pictures/pokemon types - fire only.png">
+          <img src="pictures/pokemon types - fire only.png" class="type-icon">
         </div>
-        <img src="pictures/005 - Charmeleon.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/005 - Charmeleon.png">
+        </div>
       </div>
       <div class="charizard fire flying pokemon-card" data-has-mega='true'>
         <div class="name">
@@ -106,108 +127,134 @@
           <img class="sprite mega x" src="pictures/006 - Mega Charizard X.png">
           <img class="sprite mega y" src="">
         </div>
-        <button type="button" onclick="" class="mega-btn">
+        <button type="button" onclick="" class="mega-btn" data-form="mega-x">
           <img src="pictures/mega_symbol.png">
         </button>
       </div>
-      <div class="squirtle water">
+      <div class="squirtle water pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Squirtle</h2>
-          <img src="pictures/pokemon types - water only.png">
+          <img src="pictures/pokemon types - water only.png" class="type-icon">
         </div>
-        <img src="pictures/007 - Squirtle.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/007 - Squirtle.png">
+        </div>
       </div>
-      <div class="wartortle water">
+      <div class="wartortle water pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Wartortle</h2>
-          <img src="pictures/pokemon types - water only.png">
+          <img src="pictures/pokemon types - water only.png" class="type-icon">
         </div>
-        <img src="pictures/008 - Wartortle.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/008 - Wartortle.png">
+        </div>
       </div>
-      <div class="blastoise water">
+      <div class="blastoise water pokemon-card" data-has-mega='true'>
         <div class="name">
           <h2>Blastoise</h2>
-          <img src="pictures/pokemon types - water only.png">
+          <img src="pictures/pokemon types - water only.png" class="type-icon">
         </div>
         <div class="sprite-wrapper">
           <img class="sprite normal active" src="pictures/009 - Blastoise.png">
-          <img class="sprite mega" src="">
+          <img class="sprite mega" src="pictures/009 - Mega Blastoise.png">
         </div>
-        <button type="button" onclick="" class="mega-btn">
+        <button type="button" onclick="" class="mega-btn" data-form="mega">
           <img src="pictures/mega_symbol.png">
         </button>
       </div>
-      <div class="caterpie bug">
+      <div class="caterpie bug pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Caterpie</h2>
-          <img src="pictures/pokemon types - bug only.png">
+          <img src="pictures/pokemon types - bug only.png" class="type-icon">
         </div>
-        <img src="pictures/010 - Caterpie.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/010 - Caterpie.png">
+        </div>
       </div>
-      <div class="metapod bug">
+      <div class="metapod bug pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Metapod</h2>
-          <img src="pictures/pokemon types - bug only.png">
+          <img src="pictures/pokemon types - bug only.png" class="type-icon">
         </div>
-        <img src="pictures/011 - Metapod.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/011 - Metapod.png">
+        </div>
       </div>
-      <div class="butterfree bug flying">
+      <div class="butterfree bug flying pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Butterfree</h2>
-          <img src="pictures/pokemon types - bug flying.png">
+          <img src="pictures/pokemon types - bug flying.png" class="type-icon">
         </div>
-        <img src="pictures/012 - Butterfree.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/012 - Butterfree.png">
+        </div>
       </div>
-      <div class="pidgey normal flying">
+      <div class="pidgey normal flying pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Pidgey</h2>
-          <img src="pictures/pokemon types - normal flying.png">
+          <img src="pictures/pokemon types - normal flying.png" class="type-icon">
         </div>
-        <img src="pictures/016 - Pidgey.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/016 - Pidgey.png">
+        </div>
       </div>
-      <div class="pidgeotto normal flying">
+      <div class="pidgeotto normal flying pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Pidgeotto</h2>
-          <img src="pictures/pokemon types - normal flying.png">
+          <img src="pictures/pokemon types - normal flying.png" class="type-icon">
         </div>
-        <img src="pictures/017 - Pidgeotto.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/017 - Pidgeotto.png">
+        </div>
       </div>
-      <div class="pidgeot normal flying">
+      <div class="pidgeot normal flying pokemon-card" data-has-mega='true'>
         <div class="name">
           <h2>Pidgeot</h2>
-          <img src="pictures/pokemon types - normal flying.png">
+          <img src="pictures/pokemon types - normal flying.png" class="type-icon">
         </div>
         <div class="sprite-wrapper">
           <img class="sprite normal active" src="pictures/018 - Pidgeot.png">
-          <img class="sprite mega" src="">
+          <img class="sprite mega" src="pictures/018 - Mega Pidgeot.png">
         </div>
-        <button type="button" onclick="" class="mega-btn">
+        <button type="button" onclick="" class="mega-btn" data-form="mega">
           <img src="pictures/mega_symbol.png">
         </button>
       </div>
-      <div class="rattata normal">
+      <div class="rattata normal pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Rattata</h2>
+          <img src="pictures/pokemon types - normal only.png" class="type-icon">
         </div>
-        <img src="pictures/019 - Rattata.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/019 - Rattata.png">
+        </div>
       </div>
-      <div class="raticate normal">
+      <div class="raticate normal pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Raticate</h2>
+          <img src="pictures/pokemon types - normal only.png" class="type-icon">
         </div>
-        <img src="pictures/020 - Raticate.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/020 - Raticate.png">
+        </div>
       </div>
-      <div class="alolan_rattata dark normal">
+      <div class="alolan_rattata dark normal pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Alolan Rattata</h2>
+          <img src="pictures/pokemon types - dark normal.png" class="type-icon">
         </div>
-        <img src="pictures/020 - Alolan Rattata.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/020 - Alolan Rattata.png">
+        </div>
       </div>
-      <div class="alolan_raticate dark normal">
+      <div class="alolan_raticate dark normal pokemon-card" data-has-mega='false'>
         <div class="name">
           <h2>Alolan Raticate</h2>
+          <img src="pictures/pokemon types - dark normal.png" class="type-icon">
         </div>
-        <img src="pictures/020 - Alolan Raticate.png">
+        <div class="sprite-wrapper">
+          <img class="sprite normal active" src="pictures/020 - Alolan Raticate.png">
+        </div>
       </div>
     </div>
   </div>
@@ -222,35 +269,87 @@
 
 
   <script>
+    // Search Pokemon Function
+    function filterPokemon() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.pokemon-card');
+      const bg = document.querySelectorAll('.poke_bg');
+
+      cards.forEach((card, index) => {
+        const name = card.querySelector('.name h2');
+        if (!name) return;
+
+        const nameText = name.textContent.toLowerCase();
+        const match = nameText.includes(query);
+
+        card.style.display = match ? '' : 'none';
+
+        if (bg[index]) {
+          bg[index].style.display = match ? '' : 'none';
+        }
+      });
+    }
+
+    // Search Bar Interactions
+    const wrapper = document.getElementById('searchWrapper');
+    const input = document.getElementById('searchInput');
+
+    wrapper.addEventListener('click', () => {
+      wrapper.classList.add('active');
+      input.focus();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/') {
+        wrapper.classList.add('active');
+        input.value = '';
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!wrapper.contains(e.target)) {
+        wrapper.classList.remove('active');
+        input.value = '';
+        filterPokemon();
+      }
+    });
+
+    // Mega Evolution Toggle
     const megaButtons = document.querySelectorAll('.mega-btn');
     megaButtons.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
         const pokemonCard = btn.closest('.pokemon-card')
-        const normal = pokemonCard.querySelector('.sprite.normal');
-        const mega = pokemonCard.querySelector('.sprite.mega');
-        const megaX = pokemonCard.querySelector('.sprite.mega.x');
-        const megaY = pokemonCard.querySelector('.sprite.mega.y');
-        const isMega = mega.classList.contains('active');
-        const isMegaX = megaX.classList.contains('active');
 
-        if (mega) {
-          normal.classList.toggle('active', !isMega);
-          mega.classList.toggle('active', isMega);
-        }
-        if (megaX) {
-          normal.classList.toggle('active', isMegaX);
-          megaX.classList.toggle('active', !isMegaX);
-        }
-        if (megaY) {
-          normal.classList.toggle('active', isMegaY);
-          megaY.classList.toggle('active', !isMegaY);
+        if (!pokemonCard) return;
+
+        const form = btn.dataset.form;
+        const normal = pokemonCard.querySelector('.sprite.normal');
+        const target = pokemonCard.querySelector(
+          form === 'mega' ? '.sprite.mega' :
+            form === 'mega-x' ? '.sprite.mega.x' :
+              '.sprite.mega.y'
+        );
+        if (!normal || !target) return;
+
+        const isActive = target.classList.contains('active');
+
+        //reset all sprites afterwards
+        pokemonCard.querySelectorAll('.sprite').forEach(sprite => {
+          sprite.classList.remove('active');
+        });
+
+        if (!isActive) {
+          target.classList.add('active');
+        } else {
+          normal.classList.add('active');
         }
       });
     });
 
     const bg = document.querySelector('.bg_carousel');
     const slider = document.querySelector('.pokemon_slider');
+    const box = document.querySelector('.pokemon_box');
     const nextBtn = document.querySelector('.next-btn');
     const prevBtn = document.querySelector('.prev-btn');
 
@@ -277,8 +376,9 @@
       });
     }
 
-    const slidewidth = 400;
-    const totalslides = 50
+    const slides = slider.children;
+    const totalslides = slides.length;
+    const slidewidth = box.clientWidth;
     let index = 0;
     nextBtn.addEventListener('click', () => {
       index = (index + 1) % totalslides;
