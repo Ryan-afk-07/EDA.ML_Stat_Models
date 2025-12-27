@@ -29,8 +29,8 @@
 
 .search_wrapper span{
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     right: 0;
 }
 
@@ -38,6 +38,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    left: 2px
 }
 
 .search_wrapper.active{
@@ -73,6 +74,10 @@
 }
 
 .pokemon_box{
+    position: relative;
+}
+
+.pokemon_wrapper{
     position: relative;
     margin: 0 auto;
     width: 70vw;
@@ -177,23 +182,69 @@
 
 .navigation{
     position: absolute;
-    bottom: 10%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    width: 70vw;
+    max-width: 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
-.navigation span{
-    display: inline-flex;
+.navigation .prev-btn,
+.navigation .next-btn{
+    pointer-events: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
-    background: transparent;
-    border: 2px solid #000;
+
+    width: 30px;
+    height: 30px;
+    border: 2px solid #111;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: transparent;
+
     cursor: pointer;
-    margin: 0 10px;
-    font-size: 55px;
-    color: #fff;
+    font-size: 20px;
+    color: #111;
+}
+
+.navigation .prev-btn{
+    transform: translateX(-120%);
+}
+.navigation .next-btn{
+    transform: translateX(120%);
+}
+
+.chat-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    max-width: 420px;
+    margin: 20px auto;
+}
+
+.chat-container *,
+.chat-container *::before,
+.chat-container *::after {
+    box-sizing: border-box;
+}
+
+.chat-container .chat-box{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    scroll-behavior: auto;
+}
+
+.chat-container input,
+.chat-container button{
+    position: relative;
+    width: 100%;
+    height: auto;
 }

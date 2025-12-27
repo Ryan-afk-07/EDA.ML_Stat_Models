@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normal Type Pokemon ASCII Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/poke_list.css">
+</head>
+
+<body>
+  <div class="search_wrapper" id="searchWrapper">
+    <input type="text" id="searchInput" placeholder="Search Pokémon..." , oninput="filterPokemon()">
+    <span id="search-icon"><img src="pictures/pokeball.png"></span>
+  </div>
+  <div class="bg_carousel">
+    <div class="poke_bg" data-name="bulbasaur">
+      <img src="pictures\bulbasaur_background.png">
+    </div>
+    <div class="poke_bg" data-name="ivysaur">
+      <img src="pictures\ivysaur_background.png">
+    </div>
+    <div class="poke_bg" data-name="venusaur">
+      <img src="pictures\venusaur_background.png">
+    </div>
+    <div class="poke_bg" data-name="charmander">
+      <img src="pictures\charmander_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="charmeleon">
+      <img src="pictures\charmeleon_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="charizard">
+      <img src="pictures\charizard_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="squirtle">
+      <img src="pictures\squirtle_background.png">
+    </div>
+    <div class="poke_bg" data-name="wartortle">
+      <img src="pictures\wartortle_background.png">
+    </div>
+    <div class="poke_bg" data-name="blastoise">
+      <img src="pictures\blastoise_background.png">
+    </div>
+    <div class="poke_bg" data-name="caterpie">
+      <img src="pictures/caterpie_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="metapod">
+      <img src="pictures/metapod_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="butterfree">
+      <img src="pictures/butterfree_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="weedle">
+      <img src="pictures/weedle_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="kakuna">
+      <img src="pictures/kakuna_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="beedrill">
+      <img src="pictures/beedrill_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="pidgey">
+      <img src="pictures/pidgey_background.png">
+    </div>
+    <div class="poke_bg" data-name="pidgeotto">
+      <img src="pictures/pidgeotto_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="pidgeot">
+      <img src="pictures/pidgeot_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="rattata">
+      <img src="pictures/rattata_background.jpg">
+    </div>
+    <div class="poke_bg" data-name="raticate">
+      <img src="pictures/raticate_background.png">
+    </div>
+    <div class="poke_bg" data-name="alolan_rattata">
+      <img src="pictures/alolan_rattata_background.png">
+    </div>
+    <div class="poke_bg" data-name="alolan_raticate">
+      <img src="pictures/alolan_raticate_background.png">
+    </div>
+  </div>
+  <div class="pokemon_box">
+    <div class="pokemon_wrapper">
+      <div class="pokemon_slider">
+        <div class="bulbasaur grass poison pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Bulbasaur</h2>
+            <img src="pictures/pokemon types - grass poison.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/001 - Bulbasaur.png">
+          </div>
+        </div>
+        <div class="ivysaur grass poison pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Ivysaur</h2>
+            <img src="pictures/pokemon types - grass poison.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/002 - Ivysaur.png">
+          </div>
+        </div>
+        <div class="venusaur grass poison pokemon-card" data-has-mega='true'>
+          <div class="name">
+            <h2>Venusaur</h2>
+            <img src="pictures/pokemon types - grass poison.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/003 - Venusaur.png">
+            <img class="sprite mega" src="pictures/003 - Mega Venusaur.png">
+          </div>
+          <button type="button" onclick="" class="mega-btn" , data-form="mega">
+            <img src="pictures/mega_symbol.png">
+          </button>
+        </div>
+        <div class="charmander fire pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Charmander</h2>
+            <img src="pictures/pokemon types - fire only.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/004 - Charmander.png">
+          </div>
+        </div>
+        <div class="charmeleon fire pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Charmeleon</h2>
+            <img src="pictures/pokemon types - fire only.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/005 - Charmeleon.png">
+          </div>
+        </div>
+        <div class="charizard fire flying pokemon-card" data-has-mega='true'>
+          <div class="name">
+            <h2>Charizard</h2>
+            <img src="pictures/pokemon types - fire flying.png">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/006 - Charizard.png">
+            <img class="sprite mega x" src="pictures/006 - Mega Charizard X.png">
+            <img class="sprite mega y" src="">
+          </div>
+          <button type="button" onclick="" class="mega-btn" data-form="mega-x">
+            <img src="pictures/mega_symbol.png">
+          </button>
+        </div>
+        <div class="squirtle water pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Squirtle</h2>
+            <img src="pictures/pokemon types - water only.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/007 - Squirtle.png">
+          </div>
+        </div>
+        <div class="wartortle water pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Wartortle</h2>
+            <img src="pictures/pokemon types - water only.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/008 - Wartortle.png">
+          </div>
+        </div>
+        <div class="blastoise water pokemon-card" data-has-mega='true'>
+          <div class="name">
+            <h2>Blastoise</h2>
+            <img src="pictures/pokemon types - water only.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/009 - Blastoise.png">
+            <img class="sprite mega" src="pictures/009 - Mega Blastoise.png">
+          </div>
+          <button type="button" onclick="" class="mega-btn" data-form="mega">
+            <img src="pictures/mega_symbol.png">
+          </button>
+        </div>
+        <div class="caterpie bug pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Caterpie</h2>
+            <img src="pictures/pokemon types - bug only.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/010 - Caterpie.png">
+          </div>
+        </div>
+        <div class="metapod bug pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Metapod</h2>
+            <img src="pictures/pokemon types - bug only.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/011 - Metapod.png">
+          </div>
+        </div>
+        <div class="butterfree bug flying pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Butterfree</h2>
+            <img src="pictures/pokemon types - bug flying.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/012 - Butterfree.png">
+          </div>
+        </div>
+        <div class="weedle bug poison pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Weedle</h2>
+            <img src="pictures/pokemon types - bug poison.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/013 - Weedle.png">
+          </div>
+        </div>
+        <div class="kakuna bug poison pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Kakuna</h2>
+            <img src="pictures/pokemon types - bug poison.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/014 - Kakuna.png">
+          </div>
+        </div>
+        <div class="beedrill bug poison pokemon-card" data-has-mega="true">
+          <div class="name">
+            <h2>Beedrill</h2>
+            <img src="pictures/pokemon types - bug poison.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/015 - Beedrill.png">
+            <img class="sprite mega" src="pictures/015 - Mega Beedrill.png">
+          </div>
+          <button type="button" onclick="" class="mega-btn" data-form="mega">
+            <img src="pictures/mega_symbol.png">
+          </button>
+        </div>
+        <div class="pidgey normal flying pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Pidgey</h2>
+            <img src="pictures/pokemon types - normal flying.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/016 - Pidgey.png">
+          </div>
+        </div>
+        <div class="pidgeotto normal flying pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Pidgeotto</h2>
+            <img src="pictures/pokemon types - normal flying.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/017 - Pidgeotto.png">
+          </div>
+        </div>
+        <div class="pidgeot normal flying pokemon-card" data-has-mega='true'>
+          <div class="name">
+            <h2>Pidgeot</h2>
+            <img src="pictures/pokemon types - normal flying.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/018 - Pidgeot.png">
+            <img class="sprite mega" src="pictures/018 - Mega Pidgeot.png">
+          </div>
+          <button type="button" onclick="" class="mega-btn" data-form="mega">
+            <img src="pictures/mega_symbol.png">
+          </button>
+        </div>
+        <div class="rattata normal pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Rattata</h2>
+            <img src="pictures/pokemon types - normal only.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/019 - Rattata.png">
+          </div>
+        </div>
+        <div class="raticate normal pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Raticate</h2>
+            <img src="pictures/pokemon types - normal only.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/020 - Raticate.png">
+          </div>
+        </div>
+        <div class="alolan_rattata dark normal pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Alolan Rattata</h2>
+            <img src="pictures/pokemon types - dark normal.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/019 - Alolan Rattata.png">
+          </div>
+        </div>
+        <div class="alolan_raticate dark normal pokemon-card" data-has-mega='false'>
+          <div class="name">
+            <h2>Alolan Raticate</h2>
+            <img src="pictures/pokemon types - dark normal.png" class="type-icon">
+          </div>
+          <div class="sprite-wrapper">
+            <img class="sprite normal active" src="pictures/020 - Alolan Raticate.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navigation">
+      <span class="prev-btn">
+        <i class="bx bx-chevron-left"></i>
+      </span>
+      <span class="next-btn">
+        <i class="bx bx-chevron-right"></i>
+      </span>
+    </div>
+  </div>
+  <div class="chat-container">
+    <div class="chat-box">
+      <div class="chat-display"></div>
+    </div>
+    <input type="text" id="user-input" placeholder="Ask me about the top few cards for this Pokemon">
+    <button id="send-button" onclick="">Send</button>
+  </div>
+
+
+  <script>
+    // Search Pokemon Function
+    function filterPokemon() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.pokemon-card');
+      const bg = document.querySelectorAll('.poke_bg');
+
+      cards.forEach((card, index) => {
+        const name = card.querySelector('.name h2');
+        if (!name) return;
+
+        const nameText = name.textContent.toLowerCase();
+        const match = nameText.includes(query);
+
+        card.style.display = match ? '' : 'none';
+
+        if (bg[index]) {
+          bg[index].style.display = match ? '' : 'none';
+        }
+      });
+    }
+
+    // Search Bar Interactions
+    const wrapper = document.getElementById('searchWrapper');
+    const input = document.getElementById('searchInput');
+
+    wrapper.addEventListener('click', () => {
+      wrapper.classList.add('active');
+      input.focus();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/') {
+        wrapper.classList.add('active');
+        input.value = '';
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!wrapper.contains(e.target)) {
+        wrapper.classList.remove('active');
+        input.value = '';
+        filterPokemon();
+      }
+    });
+
+    // Mega Evolution Toggle
+    const megaButtons = document.querySelectorAll('.mega-btn');
+    megaButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const pokemonCard = btn.closest('.pokemon-card')
+
+        if (!pokemonCard) return;
+
+        const form = btn.dataset.form;
+        const normal = pokemonCard.querySelector('.sprite.normal');
+        const target = pokemonCard.querySelector(
+          form === 'mega' ? '.sprite.mega' :
+            form === 'mega-x' ? '.sprite.mega.x' :
+              '.sprite.mega.y'
+        );
+        if (!normal || !target) return;
+
+        const isActive = target.classList.contains('active');
+
+        //reset all sprites afterwards
+        pokemonCard.querySelectorAll('.sprite').forEach(sprite => {
+          sprite.classList.remove('active');
+        });
+
+        if (!isActive) {
+          target.classList.add('active');
+        } else {
+          normal.classList.add('active');
+        }
+      });
+    });
+
+    // Carousel Functionality
+    const bg = document.querySelector('.bg_carousel');
+    const slider = document.querySelector('.pokemon_slider');
+    const box = document.querySelector('.pokemon_wrapper');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+
+
+    function resetMegaForms() {
+      document.querySelectorAll('.pokemon-card').forEach(card => {
+        const normal = card.querySelector('.sprite.normal');
+        const mega = card.querySelector('.sprite.mega');
+        const megaX = card.querySelector('.sprite.mega.x');
+        const megaY = card.querySelector('.sprite.mega.y');
+
+        if (mega && mega.classList.contains('active')) {
+          normal.classList.add('active');
+          mega.classList.remove('active');
+        }
+        if (megaX && megaX.classList.contains('active')) {
+          normal.classList.add('active');
+          megaX.classList.remove('active');
+        }
+        if (megaY && megaY.classList.contains('active')) {
+          normal.classList.add('active');
+          megaY.classList.remove('active');
+        }
+      });
+    }
+
+    const slides = slider.children;
+    const totalslides = slides.length;
+    const slidewidth = box.clientWidth;
+    let index = 0;
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % totalslides;
+
+      bg.style.transform = `translateX(${-index * 100}vw)`;
+      slider.style.transform = `translateX(${-index * slidewidth}px)`;
+      resetMegaForms();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + totalslides) % totalslides;
+      bg.style.transform = `translateX(${-index * 100}vw)`;
+      slider.style.transform = `translateX(${-index * slidewidth}px)`;
+      resetMegaForms();
+    });
+
+    // Chatbot Functionality
+    document.getElementById('send-button').addEventListener('click', async () => {
+      const userInput = document.getElementById('user-input');
+      const message = userInput.value.trim();
+      if (!message) return;
+
+      appendmessage('user', message);
+      userInput.value = '';
+
+      const response = await fetch("/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await response.json();
+      appendmessage('bot', data.reply);
+    });
+
+    function appendmessage(sender, text) {
+      const chatDisplay = document.querySelector('.chat-display');
+      const messageElem = document.createElement('div');
+      div.className = sender;
+      div.textContent = text;
+      chatDisplay.appendChild(div);
+    }
+  </script>
+</body>
+
+</html>
