@@ -22,4 +22,15 @@ class PokemonChatBot():
 class PokemonCardBot():
     def __init__(self, api_key):
         self.client = OpenAI(api_key=api_key)
+
+    def get_response(self, message):
+        prompt = f"You are a Pokemon card expert. Provide detailed information about the following card: {message}"
+        response = self.client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a pokemon card expert."},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        return response.choices[0].message.content
         

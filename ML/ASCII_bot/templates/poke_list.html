@@ -8,80 +8,104 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/poke_list.css">
+  <link rel="stylesheet" href="../static/poke_list.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='poke_list.css') }}">
 </head>
 
 <body>
   <div class="search_wrapper" id="searchWrapper">
     <input type="text" id="searchInput" placeholder="Search Pokémon..." , oninput="filterPokemon()">
-    <span id="search-icon"><img src="pictures/pokeball.png"></span>
+    <span id="search-icon"><img src="../static/pictures/pokeball.png"></span>
+
   </div>
   <div class="bg_carousel">
     <div class="poke_bg" data-name="bulbasaur">
-      <img src="pictures\bulbasaur_background.png">
+      <img src="../static/pictures/bulbasaur_background.png">
+      <img src="{{ url_for('static', filename='pictures/bulbasaur_background.png') }}">
     </div>
     <div class="poke_bg" data-name="ivysaur">
-      <img src="pictures\ivysaur_background.png">
+      <img src="../static/pictures/ivysaur_background.png">
+      <img src="{{ url_for('static', filename='pictures/ivysaur_background.png') }}">
     </div>
     <div class="poke_bg" data-name="venusaur">
-      <img src="pictures\venusaur_background.png">
+      <img src="../static/pictures/venusaur_background.png">
+      <img src="{{ url_for('static', filename='pictures/venusaur_background.png') }}">
     </div>
     <div class="poke_bg" data-name="charmander">
-      <img src="pictures\charmander_background.jpg">
+      <img src="../static/pictures/charmander_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/charmander_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="charmeleon">
-      <img src="pictures\charmeleon_background.jpg">
+      <img src="../static/pictures/charmeleon_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/charmeleon_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="charizard">
-      <img src="pictures\charizard_background.jpg">
+      <img src="../static/pictures/charizard_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/charizard_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="squirtle">
-      <img src="pictures\squirtle_background.png">
+      <img src="../static/pictures/squirtle_background.png">
+      <img src="{{ url_for('static', filename='pictures/squirtle_background.png') }}">
     </div>
     <div class="poke_bg" data-name="wartortle">
-      <img src="pictures\wartortle_background.png">
+      <img src="../static/pictures/wartortle_background.png">
+      <img src="{{ url_for('static', filename='pictures/wartortle_background.png') }}">
     </div>
     <div class="poke_bg" data-name="blastoise">
-      <img src="pictures\blastoise_background.png">
+      <img src="../static/pictures/blastoise_background.png">
+      <img src="{{ url_for('static', filename='pictures/blastoise_background.png') }}">
     </div>
     <div class="poke_bg" data-name="caterpie">
-      <img src="pictures/caterpie_background.jpg">
+      <img src="../static/pictures/caterpie_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/caterpie_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="metapod">
-      <img src="pictures/metapod_background.jpg">
+      <img src="../static/pictures/metapod_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/metapod_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="butterfree">
-      <img src="pictures/butterfree_background.jpg">
+      <img src="../static/pictures/butterfree_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/butterfree_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="weedle">
-      <img src="pictures/weedle_background.jpg">
+      <img src="../static/pictures/weedle_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/weedle_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="kakuna">
-      <img src="pictures/kakuna_background.jpg">
+      <img src="../static/pictures/kakuna_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/kakuna_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="beedrill">
-      <img src="pictures/beedrill_background.jpg">
+      <img src="../static/pictures/beedrill_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/beedrill_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="pidgey">
-      <img src="pictures/pidgey_background.png">
+      <img src="../static/pictures/pidgey_background.png">
+      <img src="{{ url_for('static', filename='pictures/pidgey_background.png') }}">
     </div>
     <div class="poke_bg" data-name="pidgeotto">
-      <img src="pictures/pidgeotto_background.jpg">
+      <img src="../static/pictures/pidgeotto_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/pidgeotto_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="pidgeot">
-      <img src="pictures/pidgeot_background.jpg">
+      <img src="../static/pictures/pidgeot_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/pidgeot_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="rattata">
-      <img src="pictures/rattata_background.jpg">
+      <img src="../static/pictures/rattata_background.jpg">
+      <img src="{{ url_for('static', filename='pictures/rattata_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="raticate">
-      <img src="pictures/raticate_background.png">
+      <img src="../static/pictures/raticate_background.png">
+      <img src="{{ url_for('static', filename='pictures/raticate_background.png') }}">
     </div>
     <div class="poke_bg" data-name="alolan_rattata">
-      <img src="pictures/alolan_rattata_background.png">
+      <img src="../static/pictures/alolan_rattata_background.png">
+      <img src="{{ url_for('static', filename='pictures/alolan_rattata_background.png') }}">
     </div>
     <div class="poke_bg" data-name="alolan_raticate">
-      <img src="pictures/alolan_raticate_background.png">
+      <img src="../static/pictures/alolan_raticate_background.png">
+      <img src="{{ url_for('static', filename='pictures/alolan_raticate_background.png') }}">
     </div>
   </div>
   <div class="pokemon_box">
@@ -90,220 +114,220 @@
         <div class="bulbasaur grass poison pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Bulbasaur</h2>
-            <img src="pictures/pokemon types - grass poison.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - grass poison.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/001 - Bulbasaur.png">
+            <img class="sprite normal active" src="../static/pictures/001 - Bulbasaur.png">
           </div>
         </div>
         <div class="ivysaur grass poison pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Ivysaur</h2>
-            <img src="pictures/pokemon types - grass poison.png" class="type-icon">
+            <img src="../static/pictures/types - grass poison.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/002 - Ivysaur.png">
+            <img class="sprite normal active" src="../static/pictures/002 - Ivysaur.png">
           </div>
         </div>
         <div class="venusaur grass poison pokemon-card" data-has-mega='true'>
           <div class="name">
             <h2>Venusaur</h2>
-            <img src="pictures/pokemon types - grass poison.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - grass poison.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/003 - Venusaur.png">
-            <img class="sprite mega" src="pictures/003 - Mega Venusaur.png">
+            <img class="sprite normal active" src="../static/pictures/003 - Venusaur.png">
+            <img class="sprite mega" src="../static/pictures/003 - Mega Venusaur.png">
           </div>
           <button type="button" onclick="" class="mega-btn" , data-form="mega">
-            <img src="pictures/mega_symbol.png">
+            <img src="../static/pictures/mega_symbol.png">
           </button>
         </div>
         <div class="charmander fire pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Charmander</h2>
-            <img src="pictures/pokemon types - fire only.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - fire only.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/004 - Charmander.png">
+            <img class="sprite normal active" src="../static/pictures/004 - Charmander.png">
           </div>
         </div>
         <div class="charmeleon fire pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Charmeleon</h2>
-            <img src="pictures/pokemon types - fire only.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - fire only.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/005 - Charmeleon.png">
+            <img class="sprite normal active" src="../static/pictures/005 - Charmeleon.png">
           </div>
         </div>
         <div class="charizard fire flying pokemon-card" data-has-mega='true'>
           <div class="name">
             <h2>Charizard</h2>
-            <img src="pictures/pokemon types - fire flying.png">
+            <img src="../static/pictures/pokemon types - fire flying.png">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/006 - Charizard.png">
-            <img class="sprite mega x" src="pictures/006 - Mega Charizard X.png">
-            <img class="sprite mega y" src="">
+            <img class="sprite normal active" src="../static/pictures/006 - Charizard.png">
+            <img class="sprite mega x" src="../static/pictures/006 - Mega Charizard X.png">
+            <img class="sprite mega y" src="../static/pictures/006 - Mega Charizard Y.png">
           </div>
           <button type="button" onclick="" class="mega-btn" data-form="mega-x">
-            <img src="pictures/mega_symbol.png">
+            <img src="../static/pictures/mega_symbol.png">
           </button>
         </div>
         <div class="squirtle water pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Squirtle</h2>
-            <img src="pictures/pokemon types - water only.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - water only.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/007 - Squirtle.png">
+            <img class="sprite normal active" src="../static/pictures/007 - Squirtle.png">
           </div>
         </div>
         <div class="wartortle water pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Wartortle</h2>
-            <img src="pictures/pokemon types - water only.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - water only.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/008 - Wartortle.png">
+            <img class="sprite normal active" src="../static/pictures/008 - Wartortle.png">
           </div>
         </div>
         <div class="blastoise water pokemon-card" data-has-mega='true'>
           <div class="name">
             <h2>Blastoise</h2>
-            <img src="pictures/pokemon types - water only.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - water only.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/009 - Blastoise.png">
-            <img class="sprite mega" src="pictures/009 - Mega Blastoise.png">
+            <img class="sprite normal active" src="../static/pictures/009 - Blastoise.png">
+            <img class="sprite mega" src="../static/pictures/009 - Mega Blastoise.png">
           </div>
           <button type="button" onclick="" class="mega-btn" data-form="mega">
-            <img src="pictures/mega_symbol.png">
+            <img src="../static/pictures/mega_symbol.png">
           </button>
         </div>
         <div class="caterpie bug pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Caterpie</h2>
-            <img src="pictures/pokemon types - bug only.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - bug only.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/010 - Caterpie.png">
+            <img class="sprite normal active" src="../static/pictures/010 - Caterpie.png">
           </div>
         </div>
         <div class="metapod bug pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Metapod</h2>
-            <img src="pictures/pokemon types - bug only.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - bug only.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/011 - Metapod.png">
+            <img class="sprite normal active" src="../static/pictures/011 - Metapod.png">
           </div>
         </div>
         <div class="butterfree bug flying pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Butterfree</h2>
-            <img src="pictures/pokemon types - bug flying.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - bug flying.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/012 - Butterfree.png">
+            <img class="sprite normal active" src="../static/pictures/012 - Butterfree.png">
           </div>
         </div>
         <div class="weedle bug poison pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Weedle</h2>
-            <img src="pictures/pokemon types - bug poison.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - bug poison.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/013 - Weedle.png">
+            <img class="sprite normal active" src="../static/pictures/013 - Weedle.png">
           </div>
         </div>
         <div class="kakuna bug poison pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Kakuna</h2>
-            <img src="pictures/pokemon types - bug poison.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - bug poison.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/014 - Kakuna.png">
+            <img class="sprite normal active" src="../static/pictures/014 - Kakuna.png">
           </div>
         </div>
         <div class="beedrill bug poison pokemon-card" data-has-mega="true">
           <div class="name">
             <h2>Beedrill</h2>
-            <img src="pictures/pokemon types - bug poison.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - bug poison.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/015 - Beedrill.png">
-            <img class="sprite mega" src="pictures/015 - Mega Beedrill.png">
+            <img class="sprite normal active" src="../static/pictures/015 - Beedrill.png">
+            <img class="sprite mega" src="../static/pictures/015 - Mega Beedrill.png">
           </div>
           <button type="button" onclick="" class="mega-btn" data-form="mega">
-            <img src="pictures/mega_symbol.png">
+            <img src="../static/pictures/mega_symbol.png">
           </button>
         </div>
         <div class="pidgey normal flying pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Pidgey</h2>
-            <img src="pictures/pokemon types - normal flying.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - normal flying.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/016 - Pidgey.png">
+            <img class="sprite normal active" src="../static/pictures/016 - Pidgey.png">
           </div>
         </div>
         <div class="pidgeotto normal flying pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Pidgeotto</h2>
-            <img src="pictures/pokemon types - normal flying.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - normal flying.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/017 - Pidgeotto.png">
+            <img class="sprite normal active" src="../static/pictures/017 - Pidgeotto.png">
           </div>
         </div>
         <div class="pidgeot normal flying pokemon-card" data-has-mega='true'>
           <div class="name">
             <h2>Pidgeot</h2>
-            <img src="pictures/pokemon types - normal flying.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - normal flying.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/018 - Pidgeot.png">
-            <img class="sprite mega" src="pictures/018 - Mega Pidgeot.png">
+            <img class="sprite normal active" src="../static/pictures/018 - Pidgeot.png">
+            <img class="sprite mega" src="../static/pictures/018 - Mega Pidgeot.png">
           </div>
           <button type="button" onclick="" class="mega-btn" data-form="mega">
-            <img src="pictures/mega_symbol.png">
+            <img src="../static/pictures/mega_symbol.png">
           </button>
         </div>
         <div class="rattata normal pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Rattata</h2>
-            <img src="pictures/pokemon types - normal only.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - normal only.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/019 - Rattata.png">
+            <img class="sprite normal active" src="../static/pictures/019 - Rattata.png">
           </div>
         </div>
         <div class="raticate normal pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Raticate</h2>
-            <img src="pictures/pokemon types - normal only.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - normal only.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/020 - Raticate.png">
+            <img class="sprite normal active" src="../static/pictures/020 - Raticate.png">
           </div>
         </div>
         <div class="alolan_rattata dark normal pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Alolan Rattata</h2>
-            <img src="pictures/pokemon types - dark normal.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - dark normal.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/019 - Alolan Rattata.png">
+            <img class="sprite normal active" src="../static/pictures/019 - Alolan Rattata.png">
           </div>
         </div>
         <div class="alolan_raticate dark normal pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Alolan Raticate</h2>
-            <img src="pictures/pokemon types - dark normal.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - dark normal.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
-            <img class="sprite normal active" src="pictures/020 - Alolan Raticate.png">
+            <img class="sprite normal active" src="../static/pictures/020 - Alolan Raticate.png">
           </div>
         </div>
       </div>
@@ -463,24 +487,30 @@
       appendmessage('user', message);
       userInput.value = '';
 
-      const response = await fetch("/chat", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ message })
-      });
+      const botDiv = appendmessage('bot', 'Thinking...');
+      try {
+        const response = await fetch("/chat", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ message })
+        });
 
-      const data = await response.json();
-      appendmessage('bot', data.reply);
+        const data = await response.json();
+        botDiv.textContent = data.reply;
+      } catch (error) {
+        botDiv.textContent = "Error: Unable to get response.";
+      }
     });
 
     function appendmessage(sender, text) {
       const chatDisplay = document.querySelector('.chat-display');
-      const messageElem = document.createElement('div');
+      const div = document.createElement('div');
       div.className = sender;
       div.textContent = text;
       chatDisplay.appendChild(div);
+      return div;
     }
   </script>
 </body>
