@@ -21,91 +21,70 @@
   <div class="bg_carousel">
     <div class="poke_bg" data-name="bulbasaur">
       <img src="../static/pictures/bulbasaur_background.png">
-      <img src="{{ url_for('static', filename='pictures/bulbasaur_background.png') }}">
     </div>
     <div class="poke_bg" data-name="ivysaur">
       <img src="../static/pictures/ivysaur_background.png">
-      <img src="{{ url_for('static', filename='pictures/ivysaur_background.png') }}">
     </div>
     <div class="poke_bg" data-name="venusaur">
       <img src="../static/pictures/venusaur_background.png">
-      <img src="{{ url_for('static', filename='pictures/venusaur_background.png') }}">
     </div>
     <div class="poke_bg" data-name="charmander">
       <img src="../static/pictures/charmander_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/charmander_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="charmeleon">
       <img src="../static/pictures/charmeleon_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/charmeleon_background.jpg') }}">
+
     </div>
     <div class="poke_bg" data-name="charizard">
       <img src="../static/pictures/charizard_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/charizard_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="squirtle">
       <img src="../static/pictures/squirtle_background.png">
-      <img src="{{ url_for('static', filename='pictures/squirtle_background.png') }}">
     </div>
     <div class="poke_bg" data-name="wartortle">
       <img src="../static/pictures/wartortle_background.png">
-      <img src="{{ url_for('static', filename='pictures/wartortle_background.png') }}">
     </div>
     <div class="poke_bg" data-name="blastoise">
       <img src="../static/pictures/blastoise_background.png">
-      <img src="{{ url_for('static', filename='pictures/blastoise_background.png') }}">
     </div>
     <div class="poke_bg" data-name="caterpie">
       <img src="../static/pictures/caterpie_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/caterpie_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="metapod">
       <img src="../static/pictures/metapod_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/metapod_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="butterfree">
       <img src="../static/pictures/butterfree_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/butterfree_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="weedle">
       <img src="../static/pictures/weedle_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/weedle_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="kakuna">
       <img src="../static/pictures/kakuna_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/kakuna_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="beedrill">
       <img src="../static/pictures/beedrill_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/beedrill_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="pidgey">
       <img src="../static/pictures/pidgey_background.png">
-      <img src="{{ url_for('static', filename='pictures/pidgey_background.png') }}">
     </div>
     <div class="poke_bg" data-name="pidgeotto">
       <img src="../static/pictures/pidgeotto_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/pidgeotto_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="pidgeot">
       <img src="../static/pictures/pidgeot_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/pidgeot_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="rattata">
       <img src="../static/pictures/rattata_background.jpg">
-      <img src="{{ url_for('static', filename='pictures/rattata_background.jpg') }}">
     </div>
     <div class="poke_bg" data-name="raticate">
       <img src="../static/pictures/raticate_background.png">
-      <img src="{{ url_for('static', filename='pictures/raticate_background.png') }}">
     </div>
     <div class="poke_bg" data-name="alolan_rattata">
       <img src="../static/pictures/alolan_rattata_background.png">
-      <img src="{{ url_for('static', filename='pictures/alolan_rattata_background.png') }}">
     </div>
     <div class="poke_bg" data-name="alolan_raticate">
       <img src="../static/pictures/alolan_raticate_background.png">
-      <img src="{{ url_for('static', filename='pictures/alolan_raticate_background.png') }}">
     </div>
   </div>
   <div class="pokemon_box">
@@ -123,7 +102,7 @@
         <div class="ivysaur grass poison pokemon-card" data-has-mega='false'>
           <div class="name">
             <h2>Ivysaur</h2>
-            <img src="../static/pictures/types - grass poison.png" class="type-icon">
+            <img src="../static/pictures/pokemon types - grass poison.png" class="type-icon">
           </div>
           <div class="sprite-wrapper">
             <img class="sprite normal active" src="../static/pictures/002 - Ivysaur.png">
@@ -347,6 +326,7 @@
     </div>
     <input type="text" id="user-input" placeholder="Ask me about the top few cards for this Pokemon">
     <button id="send-button" onclick="">Send</button>
+    <button id="find_top5_cards" onclick="">Get Top 5 Cards</button>
   </div>
 
 
@@ -512,6 +492,47 @@
       chatDisplay.appendChild(div);
       return div;
     }
+
+    let PokemonCard = null;
+    // Get Top 5 Cards Functionality
+    document.getElementById('find_top5_cards').addEventListener('click', async () => {
+      document.querySelectorAll(".pokemon-card").forEach(card => {
+        card.addEventListener("click", () => {
+          document.querySelectorAll('.pokemon-card').forEach(c => c.classList.remove('active'));
+          card.classList.add('active');
+          PokemonCard = card
+        })
+      })
+      const selectedPokemon = PokemonCard ? PokemonCard.querySelector('.name h2').textContent : null;
+      if (!selectedPokemon) {
+        alert("Error");
+        return;
+      }
+      const chatDisplay = document.querySelector('.chat-display');
+      chatDisplay.innerHTML = ''; // Clear previous messages
+      chatDisplay.innerHTML += `<div><strong>You:</strong> ${selectedPokemon}</div>`;
+      console.log("Selected Pokemon:", selectedPokemon);
+      const response = await fetch("/card", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ pokemon_name: selectedPokemon })
+      });
+      const data = await response.json();
+      if (data.cards && data.cards.length > 0) {
+        let reply = "<div><strong>Top 5 Cards:</strong><ul>";
+
+        data.cards.forEach(card => {
+          reply += `<li>${card.name} — ${card.price}</li>`;
+        });
+
+        reply += "</ul></div>";
+        chatDisplay.innerHTML += reply;
+      } else {
+        chatDisplay.innerHTML += "<div>No cards found.</div>";
+      }
+    });
   </script>
 </body>
 

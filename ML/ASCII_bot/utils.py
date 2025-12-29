@@ -2,6 +2,13 @@ import PIL.Image
 import numpy as np
 import pandas as pd
 from flask_socketio import SocketIO, emit
+import requests #for HTTP requests
+from bs4 import BeautifulSoup #for web scraping/HTML parsing
+import time #for time delays during scraping
+from datetime import datetime #for timestamping
+from zoneinfo import ZoneInfo #for timezone handling
+import json #for JSON handling
+import os #for file system operations
 
 #setting ASCII characters that will be employed to the final ASCII art
 ASCII_special = ["@", "#","$", "%", "?","*","+",";",":",",",".", "~", "!", "|", "/","<", ">", "=", "'", " ", "{", "}", "_", "^"]
@@ -45,7 +52,29 @@ def ascii_convert(new_width=100):
     with open("ascii_image.txt", "w") as f:
         f.write(ascii_image)   
 
-@socketio.on('user_message')
-def pokechat(data, pokebot):
-    reply = pokebot.get_response(data['message'])
-    emit('bot_reply', {'reply': reply})
+
+#function to web scrape for top 5 cards for a given pokemon
+def scrape_top_cards(pokemon_name):
+    
+    base_url = f"https://www.trollandtoad.com"
+    url = f"{base_url}/search?q={pokemon_name.lower()}"
+    headers = {
+        'User-Agent': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/58.0.3029.110'),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Connection": "keep-alive",}
+    cards = []
+    try:
+        response = requests.get(url, headers=headers, timeout=15)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        results = soup.find_all("a", href=True)[:5]
+
+        for r in results:
+            cards.append(r.get_text(strip=True))
+
+        print("First 5 raw results:", cards)
+    except Exception as e:
+        print(f"Error fetching data: {e}")
+        return []
+    
+    return cards
