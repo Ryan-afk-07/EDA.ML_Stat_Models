@@ -56,8 +56,8 @@ def ascii_convert(new_width=100):
 #function to web scrape for top 5 cards for a given pokemon
 def scrape_top_cards(pokemon_name):
     
-    base_url = f"https://www.trollandtoad.com"
-    url = f"{base_url}/search?q={pokemon_name.lower()}"
+    base_url = f"https://www.pricecharting.com"
+    url = f"{base_url}/search-products?type=prices&ignore-preferences=true&q={pokemon_name.lower()}&go=Go"
     headers = {
         'User-Agent': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/58.0.3029.110'),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",

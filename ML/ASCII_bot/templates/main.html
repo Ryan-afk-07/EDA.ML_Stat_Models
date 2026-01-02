@@ -5,22 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokemon ASCII Art Generator</title>
-  <link rel="stylesheet" href="static/styles.css">
+  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
 <body>
   <div class="gen_container">
     <h1>Select Pokemon Generation</h1>
     <ul>
-      <li><a href='/gen1/' type='button'>Gen 1</a></li>
-      <li><a href='/gen2/' type='button'>Gen 2</a></li>
-      <li><a href='/gen3/' type='button'>Gen 3</a></li>
-      <li><a href='/gen4/' type='button'>Gen 4</a></li>
-      <li><a href='/gen5/' type='button'>Gen 5</a></li>
-      <li><a href='/gen6/' type='button'>Gen 6</a></li>
-      <li><a href='/gen7/' type='button'>Gen 7</a></li>
-      <li><a href='/gen8/' type='button'>Gen 8</a></li>
-      <li><a href='/gen9/' type='button'>Gen 9</a></li>
+      <li><button onclick="" class='gen 1' type='button'>Gen 1</button></li>
+      <li><button onclick="" class='gen 2' type='button'>Gen 2</button></li>
+      <li><button onclick="" class='gen 3' type='button'>Gen 3</button></li>
+      <li><button onclick="" class='gen 4' type='button'>Gen 4</button></li>
+      <li><button onclick="" class='gen 5' type='button'>Gen 5</button></li>
+      <li><button onclick="" class='gen 6' type='button'>Gen 6</button></li>
+      <li><button onclick="" class='gen 7' type='button'>Gen 7</button></li>
+      <li><button onclick="" class='gen 8' type='button'>Gen 8</button></li>
+      <li><button onclick="" class='gen 9' type='button'>Gen 9</button></li>
     </ul>
   </div>
   <div class="type_container">
@@ -63,20 +64,23 @@
     item.style.background = colors[index % colors.length];
   });
 
-  const socket = io("http://localhost:5000");
-  async function sendMessage() {
-    const input = document.getElementById("user-input");
-    socket.emit('user_message', { message: input.value });
-    input.value = "";
+  function movetogen(genNumber) {
+
   }
-  socket.on('bot_reply', function (data) {
-    const chatDisplay = document.querySelector('.chat-display');
-    const botMessage = document.createElement('div');
-    botMessage.classList.add('bot-message');
-    botMessage.textContent = data.reply;
-    chatDisplay.appendChild(botMessage);
-    chatDisplay.scrollTop = chatDisplay.scrollHeight;
-  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('button.gen');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function () {
+        const classList = this.className.split(' ');
+        const genNumber = classList.find(cls => cls !== 'gen');
+
+        console.log(`Generation ${genNumber} button clicked`);
+
+        movetogen(genNumber);
+      })
+    })
+  })
 </script>
 
 </html>
