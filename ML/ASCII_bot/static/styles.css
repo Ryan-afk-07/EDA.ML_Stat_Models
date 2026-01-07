@@ -13,12 +13,24 @@
 
 
 .gen_container li{
+    --bg: none;
+    background-image: var(--bg);
     display: flexbox;
     font-weight: bold;
     padding: 5px;
     border-radius: 2.5px;
     font-size: 12px;
+    transition: 0.3s ease;
 }
+
+.gen_container li:nth-child(1) { --bg: url(""); }
+.gen_container li:nth-child(2) { --bg: url(""); }
+
+.gen_container li.active{
+    outline: 2px solid #fff;
+    transform: scale(1.05);
+}
+
 .type_container{
     display: flex;
     flex-direction: column;
@@ -34,10 +46,20 @@
 }
 
 .type_container li{
+    background: var(--base--bg);
     display: flexbox;
     font-weight: bold;
     padding: 15px;
-    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+.type_container li:nth-child(1) { --bg: url(""); }
+.type_container li:nth-child(2) { --bg: url(""); }
+
+.type_container li.active{
+    background: var(--bg);
+    outline: 2px solid #fff;
+    transform: scale(1.05);
 }
 
 a {

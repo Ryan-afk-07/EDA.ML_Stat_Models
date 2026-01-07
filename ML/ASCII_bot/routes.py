@@ -10,8 +10,11 @@ bot = PokemonCardBot(api_key='YOUR_OPENAI_API_KEY_HERE')
 def register_routes(app):
     @app.route('/')
     def home():
-        return render_template('poke_list.html')
+        return render_template('main.html')
 
+    @app.route("/poke_list")
+    def poke_list():
+        return render_template("poke_list.html")
     @app.route('/chat', methods=['POST'])
     def pokechat(): 
         data = request.get_json()

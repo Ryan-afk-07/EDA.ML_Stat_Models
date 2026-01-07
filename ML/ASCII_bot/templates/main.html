@@ -13,38 +13,51 @@
   <div class="gen_container">
     <h1>Select Pokemon Generation</h1>
     <ul>
-      <li><button onclick="" class='gen 1' type='button'>Gen 1</button></li>
-      <li><button onclick="" class='gen 2' type='button'>Gen 2</button></li>
-      <li><button onclick="" class='gen 3' type='button'>Gen 3</button></li>
-      <li><button onclick="" class='gen 4' type='button'>Gen 4</button></li>
-      <li><button onclick="" class='gen 5' type='button'>Gen 5</button></li>
-      <li><button onclick="" class='gen 6' type='button'>Gen 6</button></li>
-      <li><button onclick="" class='gen 7' type='button'>Gen 7</button></li>
-      <li><button onclick="" class='gen 8' type='button'>Gen 8</button></li>
-      <li><button onclick="" class='gen 9' type='button'>Gen 9</button></li>
+      <li><a href="poke_list.html?type=gen1" type='button'>Gen 1</a></li>
+      <li><a href="poke_list.html?type=gen2" type='button'>Gen 2</a></li>
+      <li><a href="poke_list.html?type=gen3" type='button'>Gen 3</a></li>
+      <li><a href="poke_list.html?type=gen4" type='button'>Gen 4</a></li>
+      <li><a href="poke_list.html?type=gen5" type='button'>Gen 5</a></li>
+      <li><a href="poke_list.html?type=gen6" type='button'>Gen 6</a></li>
+      <li><a href="poke_list.html?type=gen7" type='button'>Gen 7</a></li>
+      <li><a href="poke_list.html?type=gen8" type='button'>Gen 8</a></li>
+      <li><a href="poke_list.html?type=gen9" type='button'>Gen 9</a></li>
     </ul>
   </div>
   <div class="type_container">
     <h1>Select Pokemon Type</h1>
     <ul>
-      <li><a href='/normal'>Normal</a></li>
-      <li><a href='/fire'>Fire</a></li>
-      <li><a href='/water'>Water</a></li>
-      <li><a href='/electric'>Electric</a></li>
-      <li><a href='/grass'>Grass</a></li>
-      <li><a href='/ice'>Ice</a></li>
-      <li><a href='/fighting'>Fighting</a></li>
-      <li><a href='/poison'>Poison</a></li>
-      <li><a href='/ground'>Ground</a></li>
-      <li><a href='/flying'>Flying</a></li>
-      <li><a href='/psychic'>Psychic</a></li>
-      <li><a href='/bug'>Bug</a></li>
-      <li><a href='/rock'>Rock</a></li>
-      <li><a href='/ghost'>Ghost</a></li>
-      <li><a href='/dragon'>Dragon</a></li>
-      <li><a href='/dark'>Dark</a></li>
-      <li><a href='/steel'>Steel</a></li>
-      <li><a href='/fairy'>Fairy</a></li>
+      <li><a href='poke_list.html?type=normal' ,
+          onclick="this.href='{{url_for('poke_list', type='normal')}}'">Normal</a></li>
+      <li><a href='poke_list.html?type=fire' , onclick="this.href='{{url_for('poke_list', type='fire')}}'">Fire</a></li>
+      <li><a href='poke_list.html?type=water' , onclick="this.href='{{url_for('poke_list', type='water')}}'">Water</a>
+      </li>
+      <li><a href='poke_list.html?type=electric' ,
+          onclick="this.href='{{url_for('poke_list', type='electric')}}'">Electric</a></li>
+      <li><a href='poke_list.html?type=grass' , onclick="this.href='{{url_for('poke_list', type='grass')}}'">Grass</a>
+      </li>
+      <li><a href='poke_list.html?type=ice' , onclick="this.href='{{url_for('poke_list', type='ice')}}'">Ice</a></li>
+      <li><a href='poke_list.html?type=fighting' ,
+          onclick="this.href='{{url_for('poke_list', type='fighting')}}'">Fighting</a></li>
+      <li><a href='poke_list.html?type=poison' ,
+          onclick="this.href='{{url_for('poke_list', type='poison')}}'">Poison</a></li>
+      <li><a href='poke_list.html?type=ground' ,
+          onclick="this.href='{{url_for('poke_list', type='ground')}}'">Ground</a></li>
+      <li><a href='poke_list.html?type=flying' ,
+          onclick="this.href='{{url_for('poke_list', type='flying')}}'">Flying</a></li>
+      <li><a href='poke_list.html?type=psychic' ,
+          onclick="this.href='{{url_for('poke_list', type='psychic')}}'">Psychic</a></li>
+      <li><a href='poke_list.html?type=bug' , onclick="this.href='{{url_for('poke_list', type='bug')}}'">Bug</a></li>
+      <li><a href='poke_list.html?type=rock' , onclick="this.href='{{url_for('poke_list', type='rock')}}'">Rock</a></li>
+      <li><a href='poke_list.html?type=ghost' , onclick="this.href='{{url_for('poke_list', type='ghost')}}'">Ghost</a>
+      </li>
+      <li><a href='poke_list.html?type=dragon' ,
+          onclick="this.href='{{url_for('poke_list', type='dragon')}}'">Dragon</a></li>
+      <li><a href='poke_list.html?type=dark' , onclick="this.href='{{url_for('poke_list', type='dark')}}'">Dark</a></li>
+      <li><a href='poke_list.html?type=steel' , onclick="this.href='{{url_for('poke_list', type='steel')}}'">Steel</a>
+      </li>
+      <li><a href='poke_list.html?type=fairy' , onclick="this.href='{{url_for('poke_list', type='fairy')}}'">Fairy</a>
+      </li>
     </ul>
   </div>
   <div class="chat-container">
@@ -61,7 +74,7 @@
   const colors = ['white', 'red', 'blue', 'yellow', 'lightgreen', 'cyan', 'orange', 'purple', 'darkorange', 'white', 'violet'];
   const typeItems = document.querySelectorAll('.type_container ul li');
   typeItems.forEach((item, index) => {
-    item.style.background = colors[index % colors.length];
+    item.style.setProperty('--base-bg', colors[index % colors.length]);
   });
 
   function movetogen(genNumber) {
