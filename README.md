@@ -1,13 +1,33 @@
-<h1>Machine Learning, Statistical, AI Models</h1>
+<h1>Web Applications, ML Models, EDA Projects</h1>
 <p>Primarily done using <img src="https://www.python.org/static/community_logos/python-logo.png" height=20> <br>Flask application is employed in some projects</p>
+
+<p>Refer below for the list of Web Apps</p>
+<table>
+  <thead>
+    <tr>
+      <th>Web App Name</th>
+      <th>Models included in App</th>
+      <th>Description of App</th>
+      <th>Project Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pokemon ASCII Creation App</td>
+      <td>OpenAI Assistant, ASCII Creation Model, WebScraping</td>
+      <td>A webpage designed for users to create their own ASCII for their favorite pokemon</td>
+      <td><a href="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/tree/main/Web_Apps/ASCII_bot"></a></td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Refer below for the list of ML models</p>
 <table>
   <thead>
     <tr>
-      <th>Project Name</td>
-      <th>Main Model explored</td>
-      <th>Project Link</td>
+      <th>Project Name</th>
+      <th>Main Model explored</th>
+      <th>Project Link</th>
     </tr>
   </thead>
   <tbody>
