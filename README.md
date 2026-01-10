@@ -16,7 +16,7 @@
       <td>Pokemon ASCII Creation App</td>
       <td>OpenAI Assistant, ASCII Creation Model, WebScraping</td>
       <td>A webpage designed for users to create their own ASCII for their favorite pokemon</td>
-      <td><a href="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/tree/main/Web_Apps/ASCII_bot"></a></td>
+      <td><a href="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/tree/main/Web_Apps/ASCII_bot">Click Here</a></td>
     </tr>
   </tbody>
 </table>
