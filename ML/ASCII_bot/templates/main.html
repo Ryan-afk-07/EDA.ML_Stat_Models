@@ -74,7 +74,7 @@
   const colors = ['white', 'red', 'blue', 'yellow', 'lightgreen', 'cyan', 'orange', 'purple', 'darkorange', 'white', 'violet'];
   const typeItems = document.querySelectorAll('.type_container ul li');
   typeItems.forEach((item, index) => {
-    item.style.setProperty('--base-bg', colors[index % colors.length]);
+    item.style.setProperty('--base--bg', colors[index % colors.length]);
   });
 
   function movetogen(genNumber) {
