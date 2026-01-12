@@ -7,7 +7,7 @@
 
 <div>
   <h2>Webpage</h2>
-  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/ML/Eye_Color_Detection/Webpage_CNN_model.png">
+  <img src="https://github.com/Ryan-afk-07/EDA.ML_Stat_Models/blob/main/Web_Apps/Eye_Color_Detection/Webpage_CNN_model.png">
   <i>Note - Display of the webpage will be improved</i>
 </div>
 
